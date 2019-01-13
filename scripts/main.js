@@ -86,11 +86,13 @@ function checkWindowSize(){
     $('.collapse').css('display', 'none');
     $('.collapse').addClass('mobile');
     $('.brand1').fadeTo(1000,1);
+    $('.nav-link').fadeTo(1000,1);
   }
   else{
     $('.collapse').removeClass('mobile');
     $('.collapse').css('display', 'flex');
     $('.brand2').fadeTo(1000,1);
+    $('.nav-link').fadeTo(1000,1);
   }
 }
 
