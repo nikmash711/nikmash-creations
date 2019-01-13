@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Covered+By+Your+Grace|Marck+Script|Rock+Salt|Kirang+Haerang|Indie+Flower|Shadows+Into+Light|Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/nikmash.css">
+    <link rel="icon" href="img/logo.png" /> 
+
+    <title>NikMash Creations</title>
+
+  </head>
+
+  <body id = "top_page">
+
+    <nav class="navbar">
+      <a class="navbar-brand brand1" href="#top_page">NM</a>
+
+      <button onclick="toggleNavbar()" class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse">
+        <a class="nav-link nav-item" href="#about">About</a>
+        <a class="nav-link nav-item" href="#projects">Projects</a>
+      
+        <a class="navbar-brand brand2" href="#welcome_text">NM</a>
+
+        <a class="nav-link nav-item" href="#" target = "_blank">Resume</a>
+        <a class="nav-link nav-item" href="#contact">Contact</a>
+      </div>
+    </nav>
+    
+    <div id = "welcome_text">
+      <div id = "top_part">
+          <h1> NikMash Creations</h1>
+          <a href="#about" id = "arrow_down"> 
+              <i class="fas fa-chevron-down"></i>
+          </a>
+      </div>   
+    </div>
+
+    <span class="anchor" id = "about"></span>
+    <div class ="about">
+      <div class = "container">
+        <h2 class = "sect load-hidden"> about nikkie </h2>
+        <img src="img/headshot3.JPG" id = "headshot" class="load-hidden">
+        <div class = "row">
+          <div class = "col-md-6 col-sm-12 ">
+              <p class = "about_me load-hidden">I graduated Summa Cum Laude with a degree in Cognitive Science and a Specialization in Computing from UCLA. During my undergrad years, I immediately fell in love with web development, and I have been designing web apps ever since. I'm currently enrolled in Thinkful's Engineering Immersion Program and I'm on my way to becoming a full-stack developer!</p>
+          </div>
+          <div class = "col-md-6 col-sm-12">
+              <p class = "about_me load-hidden">I'm obsessed with details, and for me, web apps are all about the little details. I don't give up until everything looks and behaves exactly the way it's supposed to. So any look or idea you have in mind, whether it's for a business, blog, or event, I guarentee I'll bring to life! And if you don't have a design in mind? No worries - that's my favorite part :)</p>
+          </div>
+        </div>
+        <div id = "my_skills">
+          <p class = "load-hidden">The technologies I am proficient in include, but are not limited to: </p>
+          <div class = "row">
+            <div class = "col-xs-12 col-sm-4 skill-box">
+              <h4>Front-end:</h4>
+              <ul>
+                <li>Javascript</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>React/Redux</li>
+                <li>Jquery</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+            <div class = "col-xs-12 col-sm-4 skill-box">
+              <h4>Back-end:</h4>
+              <ul>
+                <li>Node</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>RESTful APIs</li>
+              </ul>
+            </div>
+            <div class = "col-xs-12 col-sm-4 skill-box">
+              <h4>Testing & CI/CD:</h4>
+              <ul>
+                <li>Mocha</li>
+                <li>Chai</li>
+                <li>Git/Github</li>
+                <li>Heroku</li>
+                <li>TravisCI</li>
+              </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <span class="anchor" id = "projects"></span>
+    <div class ="projects">
+        <div class = "container">
+          <h2 class = "sect load-hidden"> Projects </h2>
+          <div class = "row">
+            <div class = "col-md-6 col-12 ">
+              <!-- Trigger/Open The Modal -->
+              <div class = " load-hidden">
+                  <img src ="img/kbash_logo.png" class="hover-shadow logos myBtn" onclick = openModal(0)>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modals myModal">
+
+                <!-- Modal content -->
+                <div class="modals-content">
+                  <span class="close_it">&times;</span>
+                  <a href="http://danielkohanbashproperties.com" target = "_blank">
+                    <!-- <video class = "my_vid" width = "100%" loop autoplay muted src = "kbash_vid.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
+                    <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
+                    </a>
+                  <p>My client wanted a customized, responsive website showcasing his current listings, past sales, and services as a real-estate agent, along with a simple way for buyers and sellers to contact him. </p>
+                  <p>Client: <a href="http://danielkohanbashproperties.com" target = "_blank">Kohanbash Properties</a></p>
+                </div>
+
+              </div>
+            </div>
+            <div class = "col-md-6 col-12 ">
+                <!-- Trigger/Open The Modal -->
+                <div class = "load-hidden">
+                    <img class="myBtn hover-shadow logos" src ="img/discount.jpg" onclick = openModal(1) >
+                </div>
+                
+                <!-- The Modal -->
+                <div class="myModal modals">
+  
+                  <!-- Modal content -->
+                  <div class="modals-content">
+                    <span class="close_it">&times;</span>
+                    <a href="http://discountluggageofhollywood.com/" target = "_blank">
+                      <!-- <video class = "my_vid" loop autoplay muted src = "discount.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
+                      <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
+                      </a>
+                    <p>My client wanted a simple website showcasing his luggage business, where potential customers could view basic store info, contact the store, and see what products are sold.</p>
+                    <p>Client: <a href="http://discountluggageofhollywood.com/" target = "_blank">Discount Luggage of Hollywood</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class = "col-md-6 col-12 ">
+                  <!-- Trigger/Open The Modal -->
+                  <div class = "load-hidden">
+                      <img class="myBtn hover-shadow logos" src ="img/shalombayis_logo.png" onclick = openModal(2) >
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="myModal modals">
+    
+                    <!-- Modal content -->
+                    <div class="modals-content">
+                      <span class="close_it">&times;</span>
+                      <a href="http://myshalombayis.com/" target = "_blank">
+                        <!-- <video class = "my_vid" loop autoplay muted src = "shalom_vid.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
+                        <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
+                        </a>
+                      <p>My client wanted a website to help advertise free, spiritual lectures for the Jewish community.</p>
+                      <p>Client: <a href="http://myshalombayis.com/" target = "_blank">MyShalomBayis</a></p>
+                    </div>
+    
+                  </div>
+                </div>
+                <div class = "col-md-6 col-12 ">
+                    <!-- Trigger/Open The Modal -->
+                    <div class = "load-hidden">
+                        <img class="myBtn hover-shadow logos" src ="img/alexa_skill.png" onclick = openModal(3) >
+                    </div>
+                    
+                    <!-- The Modal -->
+                    <div class="myModal modals">
+      
+                      <!-- Modal content -->
+                      <div class="modals-content">
+                        <span class="close_it">&times;</span>
+                        <a href="https://www.amazon.com/Nikkie-M-Jewish-Blessings/dp/B077KHYXLM/ref=cm_cr_arp_d_product_top?ie=UTF8" target = "_blank">
+                          <!-- <video class = "my_vid" loop autoplay muted src = "jewish_vid.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
+                          <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
+                          </a>
+                        <p>I designed and implemented an Alexa Skill in Python to the Amazon Alexa Skills Store. The skill enables users to ask for Jewish blessings and after blessings on foods, drinks, holidays, and various occasions. </p>
+                        <p>Project: <a href="https://www.amazon.com/Nikkie-M-Jewish-Blessings/dp/B077KHYXLM/ref=cm_cr_arp_d_product_top?ie=UTF8" target = "_blank">Jewish Blessings</a></p>
+                      </div>
+      
+                    </div>
+                  </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <span class="anchor" id = "contact"></span>
+    <div class ="contact">
+      <div class = "container">
+        <h2 class = "sect load-hidden"> Contact Me</h2>
+        <div id = "contact_logos">
+             <span><a href="mailto:nikkiemashian@gmail.com"><i class="fas fa-envelope load-hidden"></i></a> </a></span>
+             <span><a href="https://www.linkedin.com/in/nicole-mashian/" target = "_blank"><i class="fab fa-linkedin load-hidden"></i></a></span>
+             <!-- <span><a href=""><i class="fab fa-facebook-square load-hidden"></i></a></span> -->
+             <span><a href="https://github.com/nikmash711" target = "_blank"><i class="fab fa-github-square load-hidden"></i></a></span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h3> © NikMash Creations 2018</h3>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      <!-- for the hide function -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src = "scripts/main.js"></script>
+
+  </body>
+</html>
+<!--Skills? Resume? -->

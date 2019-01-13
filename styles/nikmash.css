@@ -1,0 +1,700 @@
+/*GENERAL*/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color:black;
+  scroll-behavior: smooth;
+} 
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: 0;
+}
+
+.anchor{
+  display: block;
+  height: 70px; /*same height as header*/
+  margin-top: -70px; /*same height as header*/
+  visibility: hidden;
+} /*so when we click it, it goes to the right place*/
+
+/***** NAVBAR ******/
+.navbar{
+  text-align: center;
+  background-color: #e74c3c;
+  /* border-bottom: 5px solid transparent; */
+  animation: bg-color 30s infinite;
+  -webkit-animation: bg-color 30s infinite;
+  transition: background-color 1s;
+  transition: border-color 1s;
+  position: fixed;
+  width:100%;
+  z-index: 1000;
+}
+
+.brand1, .brand2{
+  opacity: 0;
+}
+
+.brand1{
+    display: inline;
+    float:left;
+}
+  
+.brand2{
+    display: none;
+}
+
+.collapse{
+  clear:both;
+  display: none;
+}
+
+.mobile{
+  display:none;
+}
+
+.dropdown-divider{
+border-top: 1px solid #FFA986;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+  background-color: transparent;
+}
+
+.navbar-brand{
+  font-family: 'Rock Salt', cursive;
+  font-size:2rem;
+  padding-left:20px;
+}
+
+.custom-toggler.navbar-toggler {
+  font-size:1.5rem;
+  background-color: transparent;
+  border-color: black;
+  float:right;
+  margin-top:20px;
+  margin-right:20px;
+}
+
+.fa-bars{
+  /*color:#e74c3c;
+  animation: font-color 30s infinite;
+  -webkit-animation: font-color 30s infinite;*/
+  color: black;
+}
+
+button:focus{
+  outline:none;
+} 
+
+.dropdown-menu{
+border:none;
+}
+
+#logo{
+  width: 100%;
+  height:100%;
+}
+
+.navbar a{
+  color: black;
+}
+
+.nav-link{
+  font-family: "Rock Salt", cursive;
+  transition: transform 0.2s;
+  position: relative;
+  padding-top:10px;
+  padding-bottom:5px;
+  width:150px;
+  margin:auto;
+  display: block;
+}
+
+.nav-link:hover, .nav-link:focus{
+  border-bottom: 4px solid;
+  border-radius: 10px;
+  transition: border .5s;
+}
+
+.nav-link::before,
+.nav-link::after {
+  position: absolute;
+  top: 13px;
+  font-weight: 100;
+  font-size: 150%;
+  font-family: sans-serif;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.nav-link::before {
+  left: 0;
+  content: '<';
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.nav-link::after {
+  right: 0;
+  content: '/>';
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+@-webkit-keyframes font-color {
+  0% { color: #e74c3c; }
+  20% {color: #f1c40f; }
+  40% {color: #1abc9c; }
+  60% {color: #3498db; }
+  80% {color: #9b59b6; }
+  100% {color: #e74c3c; }
+}
+
+@keyframes font-color {
+  0% {color: #e74c3c; }
+  20% {color: #f1c40f; }
+  40% {color: #1abc9c; }
+  60% {color: #3498db; }
+  80% {color: #9b59b6; }
+  100% {color: #e74c3c; }
+}
+
+@-webkit-keyframes border-color {
+  0% {border-color: #e74c3c; }
+  20% {border-color: #f1c40f; }
+  40% {border-color: #1abc9c; }
+  60% {border-color: #3498db; }
+  80% {border-color: #9b59b6; }
+  100% {border-color: #e74c3c; }
+}
+
+@keyframes border-color {
+  0% {border-color: #e74c3c; }
+  20% {border-color: #f1c40f; }
+  40% {border-color: #1abc9c; }
+  60% {border-color: #3498db; }
+  80% {border-color: #9b59b6; }
+  100% {border-color: #e74c3c; }
+}
+
+@-webkit-keyframes bg-color {
+  0% {background-color: #e74c3c; }
+  20% {background-color: #f1c40f; }
+  40% {background-color: #1abc9c; }
+  60% {background-color: #3498db; }
+  80% {background-color: #9b59b6; }
+  100% {background-color: #e74c3c; }
+}
+
+@keyframes bg-color {
+  0% {background-color: #e74c3c; }
+  20% {background-color: #f1c40f; }
+  40% {background-color: #1abc9c; }
+  60% {background-color: #3498db; }
+  80% {background-color: #9b59b6; }
+  100% {background-color: #e74c3c; }
+}
+
+@media(min-width:700px){
+  .brand1{
+    display:none;
+  }
+
+  .brand2{
+    display:block;
+  }
+
+  .collapse{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-link{
+    margin:auto 5px;
+  }
+
+  .custom-toggler.navbar-toggler{
+    display:none;
+  }
+}
+
+@media(min-width:1120px){
+  .nav-link::before {
+    left: -0.5em;
+    }
+  .nav-link::after {
+    right: -0.5em;
+    }
+}
+
+@media(min-width:851px){
+  /* this is to make the width of the items smaller so the border looks normal */
+  .nav-item{
+    margin-right:40px;
+    margin-left:40px;
+  }
+
+  .nav-link::before {
+    left: -0.9em;
+  }
+
+  .nav-link::after {
+    right: -0.9em;
+  }
+}
+
+/***TOP PART****/
+#welcome_text{
+  background-color: black;
+  color:#e74c3c;
+  text-align: center;
+  min-height: 100%;
+  padding-bottom: 10px;
+  animation: font-color 30s infinite;
+  -webkit-animation: font-color 30s infinite;
+  position:relative;
+  display:flex;
+}
+
+#welcome_text a{
+  color:inherit;
+  /* prevents the anchor default */
+}
+
+#welcome_text a:hover{
+  text-decoration: none;
+  /* prevents the anchor default */
+}
+
+h1{
+  font-family: 'Rock Salt', cursive;
+  font-size:50px;
+}
+
+#sub_logo{
+  font-size:30px;
+  font-family: 'Covered By Your Grace', cursive;
+  padding-top:20px;
+}
+
+
+#arrow_down{
+  font-size: 100px;
+}
+
+
+
+
+  
+h2{
+  font-family: 'Rock Salt', cursive;
+  font-size:40px;
+  color:white;
+  text-align: center;
+  padding-top:40px;
+  padding-bottom:10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 4px solid;
+  border-radius: 10px;
+  width:100%;
+}
+
+#top_part{
+  margin:auto;
+}
+
+
+
+h3{
+  font-size:30px;
+  font-family: 'Rock Salt';
+  color:white;
+  text-align: center;
+}
+
+.boxed h3{
+  margin-top:20px;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 20px;
+  }
+
+.service_desc{
+  font-size:25px;
+  font-family: 'Covered by your Grace', cursive;
+  color:white;
+  text-align: center;
+}
+
+.services{
+background-color:white;
+}
+
+.services h2{
+  color:black;
+}
+
+.projects{
+  /* min-height: 100%; */
+  background-image: url("../img/creative2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.about{
+    /* min-height: 100%; */
+    background-color:white;
+}
+
+.contact{
+  background-color:black;
+  color:white;
+}
+
+#contact_logos{
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  display: block;
+}
+
+#contact_logos span{
+  font-size:50px;
+  padding:20px;
+}
+
+#contact_logos a{
+  color:inherit;
+  /* prevents the anchor default */
+}
+
+#contact_logos a:hover{
+  text-decoration: none;
+  color:gray;
+  /* prevents the anchor default */
+}
+
+.about h2{
+  color:black;
+}
+
+#headshot{
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius:50%;
+  margin-bottom:20px;
+}
+
+.boxed, .logos{
+  border-radius: 20px;
+  background-color: rgb(1,1,1);
+  padding:15px;
+  margin-top:20px;
+  margin-bottom:20px;
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+  transition: .3s;
+}
+
+.logos{
+    height:200px;
+    display:block;
+    background-color:black;
+    transition: 0.3s;
+    cursor:pointer;
+  }
+
+.logos:hover{
+  background-color: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height:250px;
+}
+
+.modals p {
+  padding-top:20px;
+}
+
+.about_me{
+  font-family:'Covered By Your Grace', cursive;
+  font-size:25px;
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#my_skills{
+  font-weight: bold;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modals {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  padding-bottom:20px;
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modals-content {
+  background-color:white;
+  margin: auto;
+  padding: 20px;
+  padding-top:0;
+  border: 1px solid #888;
+  width: 80%;
+  /* height:80%; */
+  color:black;
+}
+
+/* The Close Button */
+.close_it {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_it:hover,
+.close_it:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.projects p{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.my_vid{
+  /* display:none; */
+  padding-top:50px;
+  width:200px;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+}
+
+/* #gif{
+  display:block;
+  width:100%;
+} */
+
+.container{
+  padding-bottom:15px;
+}
+
+#skills_list{
+  list-style: none;
+  margin-top:20px;
+}
+
+#skills_list li{
+  display: inline;
+  padding:10px;
+  margin:20px;
+  margin-bottom:50px;
+  color:white;
+  background-color:black;
+  font-size:16px;
+  border-radius:10px;
+  line-height: 3;
+}
+
+footer{
+  background-color:#e74c3c;
+  animation: bg-color 30s infinite;
+  -webkit-animation: bg-color 30s infinite;
+}
+
+footer h3{
+  color:black;
+  padding-top:5px;
+  padding-bottom:5px;
+  margin-bottom:0;
+  text-align: center;
+  font-size: 20px;
+  font-family:'Covered By Your Grace', cursive;
+}
+   
+/* things that might be dependent on window size */
+
+  @media (min-width:471px){
+    h1{
+        font-size:70px;
+      }
+    
+      h2{
+        font-size:60px;
+      }
+
+      #sub_logo{
+        font-size:30px;
+      }
+
+      .my_vid{
+        width:300px;
+      }
+  }
+
+  
+
+  
+  @media (min-width:676px){
+
+      #contact_logos span{
+        font-size: 75px;
+      }
+
+      #skills_list li{
+        font-size: 25px;
+      }
+
+      .my_vid{
+        width:400px;
+      }
+
+      /* #welcome_text{
+        padding-top:250px;
+      } */
+  }
+
+  /* these next two are for when phones/ipads are rotated - not sure how to make it mobile first?... */
+  @media (max-width:850px) and (max-height: 580px){
+    h1{
+      font-size:60px;
+    }
+
+    #top_part{
+      top:50%;
+      margin-top:-50px;
+    }
+
+    #welcome_text h4{
+      margin-bottom:0;
+    }
+  }
+
+  @media (max-width:600px) and (max-height: 580px){
+    h1{
+      font-size:50px;
+    }
+  }
+
+  @media(min-width:851px){
+
+    h2{
+      width:60%;
+    }
+
+    footer h3{
+      font-size:25px;
+    }
+      .my_vid{
+        width:600px;
+      }
+  }
+
+  @media(min-width:992px){
+      h1{
+          font-size:100px;
+      }
+
+      h2{
+          font-size:80px;
+      }
+
+      #sub_logo{
+          font-size:50px;
+      }
+
+      .about h2{
+          width:80%;
+      }
+
+      .contact h2{
+        width:80%;
+      }
+
+      .logos{
+        width:450px;
+        height:300px;
+      }
+
+      .logos:hover{
+        height:350px;
+      }
+
+      .boxed{
+        width:450px;
+      }
+
+      .about_me{
+        width:450px;
+        font-size:35px;
+      }
+
+      #my_skills{
+        width: 700px;
+      }
+
+      .my_vid{
+        width:750px;
+      }
+/* 
+      #gif{
+        display:none;
+      } */
+  }
+
+  .skill-box{
+    background-color:black;
+    color:white;
+    padding:10px;
+  }
+
+  .skill-box ul{
+    list-style: none;
+  }
+
