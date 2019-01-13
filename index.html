@@ -29,7 +29,7 @@
 
       <div class="collapse navbar-collapse">
         <a class="nav-link" href="#about">About</a>
-        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#creations">Creations</a>
       
         <a class="navbar-brand brand2" href="#welcome_text">NM</a>
 
@@ -38,10 +38,10 @@
       </div>
     </nav>
     
-    <section id = "welcome_text">
-      <div id = "top_part">
+    <section class = "welcome_section">
+      <div class = "welcome-text">
           <h1> NikMash Creations</h1>
-          <a href="#about" id = "arrow_down"> 
+          <a href="#about" class = "arrow_down"> 
               <i class="fas fa-chevron-down"></i>
           </a>
       </div>   
@@ -50,18 +50,18 @@
     <span class="anchor" id = "about"></span>
     <section class ="about">
       <h2> about nikkie </h2>
-      <img src="img/headshot3.JPG" id = "headshot">
+      <img src="img/headshot3.JPG" class = "headshot">
       <article class = "about-text">
         <p class = "about_me">I graduated Summa Cum Laude from UCLA with a degree in Cognitive Science and a Specialization in Computing. During my undergraduate years, I immediately fell in love with full-stack development; it allowed me to channel my creative energy into developing unique products from scratch, while also enabling me to integrate what I learned about human behavior towards designing a more positive, and accessibility-friendly, user experience. </p>
-        <p class="about_me">I'm obsessed with details, and for me, web apps are all about the little details; I don't give up until everything looks and behaves exactly the way it's supposed to. I’m constantly learning new frameworks and cutting-edge technologies, as well as developing useful and creative products. I strive to learn from those around me — peers, mentors, and co-workers alike — and thus always encourage feedback on my code.</p>
+        <p class="about_me">I'm obsessed with details, and for me, developing apps are all about the little details; I don't give up until everything looks and behaves exactly the way it's supposed to. I’m constantly learning new frameworks and cutting-edge technologies, as well as developing useful and creative products. I strive to learn from those around me — peers, mentors, and co-workers alike — and thus always encourage feedback on my code.</p>
       </article>
       <p class="about_me">When I’m not coding, I can be found eating ice cream, going to Zumba, or trying to figure out where my cat is hiding!</p>
 
-      <p class="about_me" id="my-skills">My tech skills include, but are not limited to:</p>
+      <p class="about_me"> <strong>My tech skills include, but are not limited to:</strong></p>
 
       <article class="my-skills">
         <article class="skill-box">
-          <header>Front-end:</header>
+          <header class="tech-stack">Front-end:</header>
           <ul class="skill-list">
             <li><i class="devicon-javascript-plain colored"></i>
               Javascript
@@ -80,8 +80,9 @@
             </li>
           </ul>
         </article>
+
         <article class="skill-box">
-          <header>Back-end:</header>
+          <header class="tech-stack">Back-end:</header>
           <ul class="skill-list">
             <li><i class="devicon-nodejs-plain colored"></i>
               Node
@@ -97,8 +98,9 @@
             </li>
           </ul>
         </article>
+
         <article class="skill-box">
-          <header>CI/CD:</header>
+          <header class="tech-stack">CI/CD:</header>
           <ul class="skill-list">
             <li><i class="devicon-github-plain colored"></i>
               Git/Github
@@ -115,7 +117,7 @@
         </article>
       </article>
 
-      <p class="about_me other" id="my-skills">I also have experience with:</p>
+      <p class="about_me other"><strong>I also have experience with:</strong></p>
       <article class="skill-box">
         <ul class="skill-list other">
           <li><i class="devicon-python-plain colored"></i>
@@ -132,142 +134,56 @@
           </li>
         </ul>
       </article>
-
     </section>
 
-        <!-- <div id = "my_skills">
-          <p class = "load-hidden">The technologies I am proficient in include, but are not limited to: </p>
-          <div class = "row">
-            <div class = "col-xs-12 col-sm-4 skill-box">
-              <h4>Front-end:</h4>
-              <ul>
-                <li>Javascript</li>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>React/Redux</li>
-                <li>Jquery</li>
-                <li>Bootstrap</li>
-              </ul>
-            </div>
-            <div class = "col-xs-12 col-sm-4 skill-box">
-              <h4>Back-end:</h4>
-              <ul>
-                <li>Node</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-                <li>RESTful APIs</li>
-              </ul>
-            </div>
-            <div class = "col-xs-12 col-sm-4 skill-box">
-              <h4>Testing & CI/CD:</h4>
-              <ul>
-                <li>Mocha</li>
-                <li>Chai</li>
-                <li>Git/Github</li>
-                <li>Heroku</li>
-                <li>TravisCI</li>
-              </ul>
-            </div>
-        </div>
-        </div> -->
-    </div>
+    <span class="anchor" id = "creations"></span>
+    <section class="creations">
+        <h2> Creations </h2>
 
-    <span class="anchor" id = "projects"></span>
-    <div class ="projects">
-        <div class = "container">
-          <h2 class = "sect load-hidden"> Projects </h2>
-          <div class = "row">
-            <div class = "col-md-6 col-12 ">
-              <!-- Trigger/Open The Modal -->
-              <div class = " load-hidden">
-                  <img src ="img/kbash_logo.png" class="hover-shadow logos myBtn" onclick = openModal(0)>
-              </div>
-              
-              <!-- The Modal -->
-              <div class="modals myModal">
-
-                <!-- Modal content -->
-                <div class="modals-content">
-                  <span class="close_it">&times;</span>
-                  <a href="http://danielkohanbashproperties.com" target = "_blank">
-                    <!-- <video class = "my_vid" width = "100%" loop autoplay muted src = "kbash_vid.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
-                    <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
-                    </a>
-                  <p>My client wanted a customized, responsive website showcasing his current listings, past sales, and services as a real-estate agent, along with a simple way for buyers and sellers to contact him. </p>
-                  <p>Client: <a href="http://danielkohanbashproperties.com" target = "_blank">Kohanbash Properties</a></p>
-                </div>
-
-              </div>
-            </div>
-            <div class = "col-md-6 col-12 ">
-                <!-- Trigger/Open The Modal -->
-                <div class = "load-hidden">
-                    <img class="myBtn hover-shadow logos" src ="img/discount.jpg" onclick = openModal(1) >
-                </div>
-                
-                <!-- The Modal -->
-                <div class="myModal modals">
-  
-                  <!-- Modal content -->
-                  <div class="modals-content">
-                    <span class="close_it">&times;</span>
-                    <a href="http://discountluggageofhollywood.com/" target = "_blank">
-                      <!-- <video class = "my_vid" loop autoplay muted src = "discount.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
-                      <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
-                      </a>
-                    <p>My client wanted a simple website showcasing his luggage business, where potential customers could view basic store info, contact the store, and see what products are sold.</p>
-                    <p>Client: <a href="http://discountluggageofhollywood.com/" target = "_blank">Discount Luggage of Hollywood</a></p>
-                  </div>
-                </div>
-              </div>
-              <div class = "col-md-6 col-12 ">
-                  <!-- Trigger/Open The Modal -->
-                  <div class = "load-hidden">
-                      <img class="myBtn hover-shadow logos" src ="img/shalombayis_logo.png" onclick = openModal(2) >
-                  </div>
-                  
-                  <!-- The Modal -->
-                  <div class="myModal modals">
-    
-                    <!-- Modal content -->
-                    <div class="modals-content">
-                      <span class="close_it">&times;</span>
-                      <a href="http://myshalombayis.com/" target = "_blank">
-                        <!-- <video class = "my_vid" loop autoplay muted src = "shalom_vid.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
-                        <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
-                        </a>
-                      <p>My client wanted a website to help advertise free, spiritual lectures for the Jewish community.</p>
-                      <p>Client: <a href="http://myshalombayis.com/" target = "_blank">MyShalomBayis</a></p>
-                    </div>
-    
-                  </div>
-                </div>
-                <div class = "col-md-6 col-12 ">
-                    <!-- Trigger/Open The Modal -->
-                    <div class = "load-hidden">
-                        <img class="myBtn hover-shadow logos" src ="img/alexa_skill.png" onclick = openModal(3) >
-                    </div>
-                    
-                    <!-- The Modal -->
-                    <div class="myModal modals">
-      
-                      <!-- Modal content -->
-                      <div class="modals-content">
-                        <span class="close_it">&times;</span>
-                        <a href="https://www.amazon.com/Nikkie-M-Jewish-Blessings/dp/B077KHYXLM/ref=cm_cr_arp_d_product_top?ie=UTF8" target = "_blank">
-                          <!-- <video class = "my_vid" loop autoplay muted src = "jewish_vid.mov"> <source id = "the_vid" src="" type="video/mp4"></video> -->
-                          <!-- <img src="kbash_vid.gif" alt="gif" id = "gif"> -->
-                          </a>
-                        <p>I designed and implemented an Alexa Skill in Python to the Amazon Alexa Skills Store. The skill enables users to ask for Jewish blessings and after blessings on foods, drinks, holidays, and various occasions. </p>
-                        <p>Project: <a href="https://www.amazon.com/Nikkie-M-Jewish-Blessings/dp/B077KHYXLM/ref=cm_cr_arp_d_product_top?ie=UTF8" target = "_blank">Jewish Blessings</a></p>
-                      </div>
-      
-                    </div>
-                  </div>
-            
+        <article class="creation-box">
+          <img class="mockup" src="img/pawfiles_mockup.png" alt="pawfiles mockup"/>
+          <header class="title">Pawfiles</header>
+          <p class="app-description">
+              Wouldn't it be nice to keep a timeline of your pet's life? From a list of their vets, vaccination schedule, and medical history, to remembering something hilarious they did the other day, it can be easy to forget important things about your pet. Fur-tunately Pawfiles is here to help you keep track of your pet's most memorable moments! Whether it's a medical record or a cute memory you just don't want to forget, this is the purr-fect place to document it all!
+          </p>
+          <header class="tech-stack">Tech Stack:</header>
+          <div class="tech-stack-lists">
+              <ul class="skill-list">
+                  <li><i class="devicon-javascript-plain colored"></i>
+                    Javascript
+                  </li>
+                  <li> <i class="devicon-html5-plain colored"></i>
+                    HTML5
+                  </li>
+                  <li><i class="devicon-css3-plain colored"></i>
+                    CSS
+                  </li>
+                  <li><i class="devicon-react-original colored"></i>
+                    React/Redux
+                  </li>
+                </ul>
+                <ul class="skill-list">
+                  <li><i class="devicon-nodejs-plain colored"></i>
+                    Node
+                  </li>
+                  <li><i class="devicon-express-original colored"></i>
+                    Express
+                  </li>
+                  <li><i class="devicon-mongodb-plain colored"></i>
+                    MongoDB
+                  </li>
+                  <li><i class="devicon-mocha-plain colored"></i>
+                    Mocha/Chai
+                  </li>
+                </ul>
           </div>
-        </div>
-      </div>
+            <div class="viewing-options">
+                <a href="https://pawfiles.herokuapp.com/" target="_blank"><i class="fas fa-laptop view-app"></i>Live App</a>
+                <a href="https://github.com/thinkful-ei26/nikkie-pawfiles-client" target="_blank"><i class="fab fa-github view-app"></i>Github Repo</a>
+            </div>
+        </article>
+    </section>
+
 
     <span class="anchor" id = "contact"></span>
     <div class ="contact">

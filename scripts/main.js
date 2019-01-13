@@ -25,6 +25,7 @@ function navbarChangeOnScroll(){
     $('.nav-link').css('color', '#e74c3c');
     $('.nav-link').css('animation', 'font-color 30s infinite');
     $('.nav-link').css('-webkit-animation', 'font-color 30s infinite');
+
     $('.mobile .nav-link').css('color', 'white');
     $('.mobile .nav-link').css('animation', 'none');
     $('.mobile .nav-link').css('-webkit-animation', 'none');
@@ -38,10 +39,9 @@ function navbarChangeOnScroll(){
     $('.navbar').css('transition', ' border-color 1s');
     $('.navbar').css('animation', 'border-color 30s infinite');
     $('.navbar').css('-webkit-animation', 'border-color 30s infinite');
-    $('#welcome_text').css('animation', 'none');
-    $('#welcome_text').css('-webkit-animation', 'none');
-    //  $("#arrow_down").css("animation", "none");
-    // $("#arrow_down").css("-webkit-animation", "none");
+    $('.welcome_section').css('animation', 'none');
+    $('.welcome_section').css('-webkit-animation', 'none');
+
     $('.custom-toggler.navbar-toggler ').css('border-color', '#e74c3c');
     $('.custom-toggler.navbar-toggler ').css('animation', 'border-color 30s infinite');
     $('.custom-toggler.navbar-toggler ').css('-webkit-animation', 'border-color 30s infinite');
@@ -66,10 +66,9 @@ function navbarChangeOnScroll(){
     $('.navbar').css('-webkit-animation', 'bg-color 30s infinite');
     // $('.navbar').css('border-color', 'transparent');
     $('.navbar').css('transition', ' border-color 1s');
-    $('#welcome_text').css('animation', 'border-color 30s infinite');
-    $('#welcome_text').css('-webkit-animation', 'font-color 30s infinite');
-    // $("#arrow_down").css("animation", "font-color 30s infinite");
-    // $("#arrow_down").css("-webkit-animation", "font-color 30s infinite");
+    $('.welcome_section').css('animation', 'border-color 30s infinite');
+    $('.welcome_section').css('-webkit-animation', 'font-color 30s infinite');
+ 
     $('.custom-toggler.navbar-toggler ').css('border-color', 'black');
     $('.custom-toggler.navbar-toggler ').css('animation', 'none');
     $('.custom-toggler.navbar-toggler ').css('-webkit-animation', 'none');
@@ -97,7 +96,7 @@ function checkWindowSize(){
 }
 
 function toggleNavbar(){
-  $('.mobile').toggle();
+  $('.mobile').slideToggle('slow');
 }
 
 function openModal(num){
@@ -139,30 +138,6 @@ function openModal(num){
 //     }
 //   }); //this is so that clicking outside of navbar closes navbar/collapses WORKS ON COMPUTER  
 // }
-
-// Add smooth scrolling to all links
-//   $('a').on('click', function(event) {
-
-//     // Make sure this.hash has a value before overriding default behavior
-//     if (this.hash !== '') {
-//       // Prevent default anchor click behavior
-//       event.preventDefault();
-
-//       // Store hash
-//       var hash = this.hash;
-
-//       // Using jQuery's animate() method to add smooth page scroll
-//       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-//       $('html, body').animate({
-//         scrollTop: $(hash).offset().top
-//       }, 1500, function(){
-
-//         // Add hash (#) to URL when done scrolling (default click behavior)
-//         window.location.hash = hash;
-//       });
-//     } // End if
-//   });
-// });
 
 
 // Problem with Safari: when its on an anchor, and you refresh from a different point in the page, it wont jump to the correct spot, but itll flicker white
