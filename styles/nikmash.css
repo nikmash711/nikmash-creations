@@ -314,13 +314,7 @@ border:none;
 
 h1{
   font-family: 'Rock Salt', cursive;
-  font-size:30px;
-}
-
-#sub_logo{
-  font-size:30px;
-  font-family: 'Covered By Your Grace', cursive;
-  padding-top:20px;
+  font-size: 30px;
 }
 
 .arrow_down{
@@ -329,11 +323,43 @@ h1{
   display: block;
 }
 
+
 @media(min-width:450px){
   h1{
     font-size:50px;
   }
 }
+
+@media(min-width:500px){
+  section{
+    padding:35px;
+  }
+
+  .about_me{
+    width: 95%;
+  }
+}
+
+@media (min-width:570px){
+  h1{
+      font-size:70px;
+    }
+  
+    h2{
+      font-size:60px;
+    }
+}
+
+@media(min-width:992px){
+  h1{
+      font-size:100px;
+  }
+
+  h2{
+      font-size:80px;
+  }
+}
+
 
 /****ABOUT SECTION*****/
 .about{
@@ -449,7 +475,7 @@ h1{
 .creation-box{
   background-color:rgba(255,255,255,.7);
   margin:20px auto;
-  padding: 30px 10px;
+  padding: 30px 20px;
   box-shadow: 10px 10px 20px #000;
   transition:1s;
   font-family:'Source Code Pro', monospace;
@@ -464,6 +490,10 @@ h1{
   width:fit-content;
   margin:auto;
   display: block;
+}
+
+.mockup img{
+  width: 260px;
 }
 
 .creation-box .title{
@@ -535,7 +565,7 @@ h1{
   }
 
   .creation-box .title{
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   .view-app{
@@ -550,7 +580,7 @@ h1{
   }
 
   .mockup{
-    flex:1;
+    flex:2;
     display:inline-block;
   } 
 
@@ -561,7 +591,7 @@ h1{
   .app-intro {
     display: inline-block;
     width: 100%;
-    flex: 1;
+    flex: 2;
     vertical-align: top;
   }
 
@@ -579,6 +609,10 @@ h1{
     text-align: left;
   }
 
+  .tech-stack-section{
+    flex: 1;
+  }
+
   .creation-box .tech-stack{
     margin-top: 0;
   }
@@ -590,157 +624,48 @@ h1{
   }
 }
 
-
-
-h3{
-  font-size:30px;
-  font-family: 'Rock Salt';
-  color:white;
-  text-align: center;
-}
-
-.boxed h3{
-  margin-top:20px;
-}
-
-
-.service_desc{
-  font-size:25px;
-  font-family: 'Covered by your Grace', cursive;
-  color:white;
-  text-align: center;
-}
-
-.services{
-background-color:white;
-}
-
-.services h2{
-  color:black;
-}
-
-
-
-
+/*****CONTACT*****/
 .contact{
   background-color:black;
   color:white;
 }
 
-#contact_logos{
+.contact_logos{
   margin-left:auto;
   margin-right:auto;
   text-align:center;
   display: block;
 }
 
-#contact_logos span{
-  font-size:50px;
-  padding:20px;
+.contact_logos a{
+  margin: auto 10px;
 }
 
-#contact_logos a{
+.contact_logos a i{
   color:inherit;
+  font-size:50px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  width: fit-content;
+  padding: 10px;
+  transition: .5s;
   /* prevents the anchor default */
 }
 
-#contact_logos a:hover{
+.contact_logos a i:hover{
   text-decoration: none;
-  color:gray;
-  /* prevents the anchor default */
+  background-color: white;
+  color: black;  /* prevents the anchor default */
 }
 
-.boxed, .logos{
-  border-radius: 20px;
-  background-color: rgb(1,1,1);
-  padding:15px;
-  margin-top:20px;
-  margin-bottom:20px;
-  width:300px;
-  margin-left:auto;
-  margin-right:auto;
-  transition: .3s;
-}
-
-.logos{
-    height:200px;
-    display:block;
-    background-color:black;
-    transition: 0.3s;
-    cursor:pointer;
+@media (min-width:676px){
+  .contact_logos a{
+    font-size: 75px;
   }
-
-.logos:hover{
-  background-color: transparent;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height:250px;
 }
 
-.modals p {
-  padding-top:20px;
-}
-
-.modals {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  padding-bottom:20px;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modals-content {
-  background-color:white;
-  margin: auto;
-  padding: 20px;
-  padding-top:0;
-  border: 1px solid #888;
-  width: 80%;
-  /* height:80%; */
-  color:black;
-}
-
-/* The Close Button */
-.close_it {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close_it:hover,
-.close_it:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.projects p{
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-
-.my_vid{
-  /* display:none; */
-  padding-top:50px;
-  width:200px;
-  margin-left:auto;
-  margin-right:auto;
-  display:block;
-}
-
-/* #gif{
-  display:block;
-  width:100%;
-} */
+/****FOOTER***/
 
 footer h3{
   color:black;
@@ -748,41 +673,9 @@ footer h3{
   padding-bottom:5px;
   margin-bottom:0;
   text-align: center;
-  font-size: 20px;
-  font-family:'Covered By Your Grace', cursive;
+  font-size: 18px;
+  font-family: "Rock Salt", cursive;
 }
-   
-/* things that might be dependent on window size */
-
-  @media (min-width:570px){
-    h1{
-        font-size:70px;
-      }
-    
-      h2{
-        font-size:60px;
-      }
-
-      #sub_logo{
-        font-size:30px;
-      }
-
-      .my_vid{
-        width:300px;
-      }
-  }
-  
-  @media (min-width:676px){
-
-      #contact_logos span{
-        font-size: 75px;
-      }
-
-      .my_vid{
-        width:400px;
-      }
-
-  }
 
   /* these next two are for when phones/ipads are rotated - not sure how to make it mobile first?... */
   @media (max-width:850px) and (max-height: 580px){
@@ -801,54 +694,5 @@ footer h3{
     h1{
       font-size:50px;
     }
-  }
-
-  @media(min-width:851px){
-
-    footer h3{
-      font-size:25px;
-    }
-      .my_vid{
-        width:600px;
-      }
-  }
-
-  @media(min-width:992px){
-      h1{
-          font-size:100px;
-      }
-
-      h2{
-          font-size:80px;
-      }
-
-      #sub_logo{
-          font-size:50px;
-      }
-
-      .contact h2{
-        width:80%;
-      }
-
-      .logos{
-        width:450px;
-        height:300px;
-      }
-
-      .logos:hover{
-        height:350px;
-      }
-
-      .boxed{
-        width:450px;
-      }
-
-      .my_vid{
-        width:750px;
-      }
-/* 
-      #gif{
-        display:none;
-      } */
   }
 
