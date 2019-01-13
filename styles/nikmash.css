@@ -1,7 +1,6 @@
 /*GENERAL*/
 * {
   box-sizing: border-box;
-  transition: .5s;
 }
 
 html, body {
@@ -462,7 +461,7 @@ h1{
 }
 
 .mockup{
-  width:260px;
+  width:fit-content;
   margin:auto;
   display: block;
 }
@@ -483,6 +482,11 @@ h1{
   width: fit-content;
 }
 
+.tech-stack-section{
+  width: fit-content;
+  margin: auto;
+}
+
 .creation-box .skill-list{
   margin:auto 10px;
   display: inline-block;
@@ -492,7 +496,7 @@ h1{
 .app-description{
   letter-spacing: -.5px;
   font-weight: 700;
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 
 .viewing-options{
@@ -526,7 +530,7 @@ h1{
     width:95%;
   }
 
-  .mockup{
+  .mockup img{
     width: 400px;
   }
 
@@ -540,19 +544,43 @@ h1{
 }
 
 @media(min-width:1200px){
+
+  .creation-box{
+    display:flex;
+  }
+
   .mockup{
-    width:49%;
+    flex:1;
     display:inline-block;
   } 
 
+  .mockup img{
+    width: 100%;
+  }
+
   .app-intro {
     display: inline-block;
-    width: 49%;
+    width: 100%;
+    flex: 1;
     vertical-align: top;
   }
 
   .app-description{
     padding: 10px;
+  }
+
+  .second{
+    order: 2;
+    text-align: right;
+  }
+
+  .first{
+    order: 1;
+    text-align: left;
+  }
+
+  .creation-box .tech-stack{
+    margin-top: 0;
   }
 }
 
