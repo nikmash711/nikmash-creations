@@ -7,9 +7,10 @@
 
     <!-- Bootstrap CSS -->
 
-    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Covered+By+Your+Grace|Marck+Script|Rock+Salt|Kirang+Haerang|Indie+Flower|Shadows+Into+Light|Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Covered+By+Your+Grace|Marck+Script|Rock+Salt|Kirang+Haerang|Indie+Flower|Shadows+Into+Light|Gloria+Hallelujah|Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="styles/nikmash.css">
     <link rel="icon" href="img/logo.png" /> 
 
@@ -27,39 +28,114 @@
       </button>
 
       <div class="collapse navbar-collapse">
-        <a class="nav-link nav-item" href="#about">About</a>
-        <a class="nav-link nav-item" href="#projects">Projects</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
       
         <a class="navbar-brand brand2" href="#welcome_text">NM</a>
 
-        <a class="nav-link nav-item" href="#" target = "_blank">Resume</a>
-        <a class="nav-link nav-item" href="#contact">Contact</a>
+        <a class="nav-link" href="#" target = "_blank">Resume</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </div>
     </nav>
     
-    <div id = "welcome_text">
+    <section id = "welcome_text">
       <div id = "top_part">
           <h1> NikMash Creations</h1>
           <a href="#about" id = "arrow_down"> 
               <i class="fas fa-chevron-down"></i>
           </a>
       </div>   
-    </div>
+    </section>
 
     <span class="anchor" id = "about"></span>
-    <div class ="about">
-      <div class = "container">
-        <h2 class = "sect load-hidden"> about nikkie </h2>
-        <img src="img/headshot3.JPG" id = "headshot" class="load-hidden">
-        <div class = "row">
-          <div class = "col-md-6 col-sm-12 ">
-              <p class = "about_me load-hidden">I graduated Summa Cum Laude with a degree in Cognitive Science and a Specialization in Computing from UCLA. During my undergrad years, I immediately fell in love with web development, and I have been designing web apps ever since. I'm currently enrolled in Thinkful's Engineering Immersion Program and I'm on my way to becoming a full-stack developer!</p>
-          </div>
-          <div class = "col-md-6 col-sm-12">
-              <p class = "about_me load-hidden">I'm obsessed with details, and for me, web apps are all about the little details. I don't give up until everything looks and behaves exactly the way it's supposed to. So any look or idea you have in mind, whether it's for a business, blog, or event, I guarentee I'll bring to life! And if you don't have a design in mind? No worries - that's my favorite part :)</p>
-          </div>
-        </div>
-        <div id = "my_skills">
+    <section class ="about">
+      <h2> about nikkie </h2>
+      <img src="img/headshot3.JPG" id = "headshot">
+      <article class = "about-text">
+        <p class = "about_me">I graduated Summa Cum Laude from UCLA with a degree in Cognitive Science and a Specialization in Computing. During my undergraduate years, I immediately fell in love with full-stack development; it allowed me to channel my creative energy into developing unique products from scratch, while also enabling me to integrate what I learned about human behavior towards designing a more positive, and accessibility-friendly, user experience. </p>
+        <p class="about_me">I'm obsessed with details, and for me, web apps are all about the little details; I don't give up until everything looks and behaves exactly the way it's supposed to. I’m constantly learning new frameworks and cutting-edge technologies, as well as developing useful and creative products. I strive to learn from those around me — peers, mentors, and co-workers alike — and thus always encourage feedback on my code.</p>
+      </article>
+      <p class="about_me">When I’m not coding, I can be found eating ice cream, going to Zumba, or trying to figure out where my cat is hiding!</p>
+
+      <p class="about_me" id="my-skills">My tech skills include, but are not limited to:</p>
+
+      <article class="my-skills">
+        <article class="skill-box">
+          <header>Front-end:</header>
+          <ul class="skill-list">
+            <li><i class="devicon-javascript-plain colored"></i>
+              Javascript
+            </li>
+            <li> <i class="devicon-html5-plain colored"></i>
+              HTML5
+            </li>
+            <li><i class="devicon-css3-plain colored"></i>
+              CSS
+            </li>
+            <li><i class="devicon-react-original colored"></i>
+              React/Redux
+            </li>
+            <li> <i class="devicon-jquery-plain colored"></i>
+              Jquery
+            </li>
+          </ul>
+        </article>
+        <article class="skill-box">
+          <header>Back-end:</header>
+          <ul class="skill-list">
+            <li><i class="devicon-nodejs-plain colored"></i>
+              Node
+            </li>
+            <li><i class="devicon-express-original colored"></i>
+              Express
+            </li>
+            <li><i class="devicon-mongodb-plain colored"></i>
+              MongoDB
+            </li>
+            <li><i class="devicon-postgresql-plain colored"></i>
+              PostgreSQL
+            </li>
+          </ul>
+        </article>
+        <article class="skill-box">
+          <header>CI/CD:</header>
+          <ul class="skill-list">
+            <li><i class="devicon-github-plain colored"></i>
+              Git/Github
+            </li>
+            <li><i class="devicon-heroku-plain colored"></i>
+              Heroku</li>
+            <li><i class="devicon-travis-plain colored"></i>
+              TravisCI
+            </li>
+            <li><i class="devicon-mocha-plain colored"></i>
+              Mocha/Chai
+            </li>
+          </ul>
+        </article>
+      </article>
+
+      <p class="about_me other" id="my-skills">I also have experience with:</p>
+      <article class="skill-box">
+        <ul class="skill-list other">
+          <li><i class="devicon-python-plain colored"></i>
+            Python
+          </li>
+          <li><i class="devicon-java-plain colored"></i>
+            Java
+          </li>
+          <li><i class="devicon-cplusplus-plain colored"></i>
+            C++
+          </li>
+          <li><i class="devicon-php-plain colored"></i>
+            PHP
+          </li>
+        </ul>
+      </article>
+
+    </section>
+
+        <!-- <div id = "my_skills">
           <p class = "load-hidden">The technologies I am proficient in include, but are not limited to: </p>
           <div class = "row">
             <div class = "col-xs-12 col-sm-4 skill-box">
@@ -93,8 +169,7 @@
               </ul>
             </div>
         </div>
-        </div>
-      </div>
+        </div> -->
     </div>
 
     <span class="anchor" id = "projects"></span>
