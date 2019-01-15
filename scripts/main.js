@@ -14,7 +14,6 @@ $(document).ready(function(){
     navbarChangeOnScroll();
   });
   
-  // clickOutsideNavbar();  
 });
 
 function navbarChangeOnScroll(){
@@ -98,79 +97,3 @@ function checkWindowSize(){
 function toggleNavbar(){
   $('.mobile').slideToggle('slow');
 }
-
-function openModal(num){
-  var modal = document.getElementsByClassName('myModal')[num];
-  
-  // Get the button that opens the modal
-  // var btn = document.getElementById("myBtn");
-  var btn = document.getElementsByClassName('myBtn')[num];
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName('close_it')[num];
-  
-  // When the user clicks the button, open the modal 
-  // btn.onclick = function() {
-  modal.style.display = 'block';
-  // }
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = 'none';
-  };
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-  };
-}
-
-
-// function clickOutsideNavbar(){
-//   $(document).click(function (event) {
-//     var clickover = $(event.target);
-//     var $navbar = $('.navbar-collapse');               
-//     var _opened = $navbar.hasClass('show');
-//     if (_opened === true && !clickover.hasClass('navbar-toggle')) {      
-//       $navbar.collapse('hide');
-//     }
-//   }); //this is so that clicking outside of navbar closes navbar/collapses WORKS ON COMPUTER  
-// }
-
-
-// Problem with Safari: when its on an anchor, and you refresh from a different point in the page, it wont jump to the correct spot, but itll flicker white
-
-
-// if (window.innerWidth < 576){
-//   sr.reveal('.boxed', { duration: 2000, viewFactor: 0.4, rotate: { x: 100, y: 100, z: 0 },}); 
-// }
-// else{
-//   sr.reveal('.boxed', {
-//   distance: '200px', // Begin animation 500px away from its finishing position
-//   duration: 500,
-//   easing: 'cubic-bezier(.33,.35,0,1)',
-//   origin: 'bottom' // Element will animate from the bottom
-// }, 250);     
-// }
-
-//Modal Stuff: 
-
-// Get the modal
-// var modal = document.getElementById('myModal');
-
-
-// $(window).bind("load", function() {  
-//     document.getElementById("the_vid").src = "kbash_website_vid_mobile.mp4";
-//     document.getElementById("my_vid").load();
-// }); 
-
-// need to change scrollreveal on safari bc it doesnt work well
-// if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)) 
-// {
-//   sr.reveal('.load-hidden', {scale: 0.85, duration: 1000,viewFactor: 0.2,});
-// }
-// else{
-//   sr.reveal('.load-hidden', { duration: 1000, viewFactor: 0.2, rotate: { x: 50, y: 0, z: 0 },});
-// }
