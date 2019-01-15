@@ -1,6 +1,8 @@
 /*GENERAL*/
 * {
   box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+
 }
 
 html, body {
@@ -34,6 +36,7 @@ h2{
   border-bottom: 4px solid;
   border-radius: 10px;
   width:fit-content;
+  width:-moz-fit-content;
   padding: 0 20px 10px 20px;
 }
 
@@ -47,6 +50,10 @@ section{
   margin-top: -70px; /*same height as header*/
   visibility: hidden;
 } /*so when we click it, it goes to the right place*/
+
+.italic{
+  font-style: italic;
+}
 
 @media(min-width:500px){
   section{
@@ -147,6 +154,7 @@ border:none;
   font-weight: 700;
   letter-spacing: 4px;
   width: fit-content;
+  width:-moz-fit-content;
   opacity:0;
 }
 
@@ -300,6 +308,7 @@ border:none;
 .welcome-text{
   margin:auto;
   width: fit-content;
+  width:-moz-fit-content;
 }
 
 .welcome_section a{
@@ -314,7 +323,7 @@ border:none;
 
 h1{
   font-family: 'Rock Salt', cursive;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .arrow_down{
@@ -397,6 +406,7 @@ h1{
   color:black;
   padding:10px 50px;
   width: fit-content;
+  width:-moz-fit-content;
   margin:0 auto;
   border-radius: 10px;
   font-size: 20px;
@@ -422,6 +432,7 @@ h1{
   /* border-bottom: 2px solid; */
   border-radius: 10px;
   width: fit-content;
+  width:-moz-fit-content;
   padding:5px 10px;
   color: white;
   background-color: black;
@@ -460,7 +471,7 @@ h1{
   }
 
   .about_me{
-    font-size:30px;
+    font-size:28px;
   }
 }
 
@@ -488,6 +499,7 @@ h1{
 
 .mockup{
   width:fit-content;
+  width:-moz-fit-content;
   margin:auto;
   display: block;
 }
@@ -503,17 +515,18 @@ h1{
 }
 
 .creation-box .tech-stack{
-  margin:auto;
-  margin-top: 30px;
+  margin:30px auto 10px auto;
 }
 
 .tech-stack-lists{
   margin:auto;
   width: fit-content;
+  width:-moz-fit-content;
 }
 
 .tech-stack-section{
   width: fit-content;
+  width:-moz-fit-content;
   margin: auto;
 }
 
@@ -521,6 +534,7 @@ h1{
   margin:auto 10px;
   display: inline-block;
   width: fit-content;
+  width:-moz-fit-content;
 }
 
 .app-description{
@@ -547,7 +561,9 @@ h1{
   color: white;
   border-radius: 50%;
   width: fit-content;
+  width:-moz-fit-content;
   margin: auto;
+  margin-bottom: 5px;
   padding: 10px;
 }
 
@@ -643,11 +659,12 @@ h1{
 
 .contact_logos a i{
   color:inherit;
-  font-size:50px;
+  font-size:60px;
   background-color: black;
   color: white;
   border-radius: 50%;
   width: fit-content;
+  width:-moz-fit-content;
   padding: 10px;
   transition: .5s;
   /* prevents the anchor default */
