@@ -173,6 +173,8 @@ border:none;
   font-family: sans-serif;
   opacity: 0;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+  -o-transition: opacity 0.2s, -o-transform 0.2s;
   transition: opacity 0.2s, transform 0.2s;
 }
 
@@ -180,6 +182,9 @@ border:none;
   left: -8px;
   content: '<';
   -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
 }
 
@@ -187,6 +192,9 @@ border:none;
   right: -15px;
   content: '/>';
   -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
   transform: translateX(100%);
 }
 
@@ -196,6 +204,9 @@ border:none;
 .nav-link:focus::after {
   opacity: 1;
   -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
@@ -486,6 +497,7 @@ h1{
 }
 
 .creation-box{
+  background-color:rgb(255,255,255);
   background-color:rgba(255,255,255,.7);
   margin:70px auto 20px auto;
   padding: 30px 20px;
@@ -496,6 +508,7 @@ h1{
 
 .creation-box:hover, .creation-box:focus{
   box-shadow: 20px 20px 20px #000;
+  background-color:rgb(255,255,255);
   background-color: rgba(255,255,255,.9);;
 }
 
@@ -660,10 +673,9 @@ h1{
 }
 
 .contact_logos a i{
-  color:inherit;
+  color:white;
   font-size:60px;
   background-color: black;
-  color: white;
   border-radius: 50%;
   width: fit-content;
   width:-moz-fit-content;
@@ -713,4 +725,3 @@ footer h3{
       font-size:50px;
     }
   }
-
