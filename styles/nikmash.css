@@ -60,7 +60,7 @@ section{
     padding:35px;
   }
 
-  .about_me{
+  .text{
     width: 95%;
   }
 }
@@ -357,7 +357,7 @@ h1{
     padding:35px;
   }
 
-  .about_me{
+  .text{
     width: 95%;
   }
 }
@@ -392,15 +392,16 @@ h1{
   color:black;
 }
 
-.about_me{
+.text{
   text-align: center;
   font-family:'Source Code Pro', monospace;
   font-size:20px;
   margin-left:auto;
   margin-right:auto;
+  letter-spacing: -1px;
 }
 
-.about-text .about_me{
+.about-text .text{
   text-align: left;
 }
 
@@ -459,7 +460,7 @@ h1{
 }
 
 @media(min-width: 800px){
-  .about_me{
+  .text{
     font-size:25px;
   }
 }
@@ -478,12 +479,12 @@ h1{
     flex-direction: row;
   }
 
-  .about-text .about_me{
+  .about-text .text{
     flex:1;
     margin: 0 50px;
   }
 
-  .about_me{
+  .text{
     font-size:28px;
   }
 }
