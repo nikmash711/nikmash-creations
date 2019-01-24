@@ -47,8 +47,8 @@ function navbarChangeOnScroll(){
     $('.fa-bars').css('color', '#e74c3c');
     $('.fa-bars').css('animation', 'font-color 30s infinite');
     $('.fa-bars').css('-webkit-animation', 'font-color 30s infinite');
-    $('footer').css('animation', 'bg-color 30s infinite');
-    $('footer').css('-webkit-animation', 'bg-color 30s infinite');
+    $('footer').css('animation', 'font-color 30s infinite');
+    $('footer').css('-webkit-animation', 'font-color 30s infinite');
       
   }
   else {

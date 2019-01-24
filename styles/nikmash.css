@@ -70,7 +70,7 @@ section{
 .navbar{
   text-align: center;
   background-color: black;
-  /* border-bottom: 5px solid transparent; */
+  border-bottom: 5px solid;
   transition: background-color 1s;
   transition: border-color 1s;
   position: fixed;
@@ -502,27 +502,24 @@ h1{
 
 /****CREATIONS****/
 .creations{
-  background-image: url("../img/creative2.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-attachment: fixed;
+  background-color: black;
 }
 
 .creation-box{
   background-color:rgb(255,255,255);
-  background-color:rgba(255,255,255,.7);
+  /* background-color:rgba(255,255,255,.7); */
   margin:70px auto 20px auto;
   padding: 30px 20px;
-  box-shadow: 10px 10px 20px #000;
+  /* box-shadow: 10px 10px 20px #000; */
   transition:1s;
   font-family:'Source Code Pro', monospace;
 }
 
-.creation-box:hover, .creation-box:focus{
+/* .creation-box:hover, .creation-box:focus{
   box-shadow: 20px 20px 20px #000;
   background-color:rgb(255,255,255);
   background-color: rgba(255,255,255,.9);;
-}
+} */
 
 .mockup{
   width:fit-content;
@@ -669,8 +666,12 @@ h1{
 
 /*****CONTACT*****/
 .contact{
-  background-color:black;
-  color:white;
+  background-color:white;
+  color:black;
+}
+
+.contact h2{
+  color: black;
 }
 
 .contact_logos{
@@ -685,9 +686,9 @@ h1{
 }
 
 .contact_logos a i{
-  color:white;
+  color:black;
   font-size:60px;
-  background-color: black;
+  background-color: white;
   border-radius: 50%;
   width: fit-content;
   width:-moz-fit-content;
@@ -698,8 +699,8 @@ h1{
 
 .contact_logos a i:hover{
   text-decoration: none;
-  background-color: white;
-  color: black;  /* prevents the anchor default */
+  background-color: black;
+  color: white;  /* prevents the anchor default */
 }
 
 @media (min-width:676px){
@@ -711,12 +712,13 @@ h1{
 /****FOOTER***/
 
 footer h3{
-  color:black;
+  background-color:black;
   padding: 10px;
   margin-bottom:0;
   text-align: center;
   font-size: 18px;
   font-family: "Rock Salt", cursive;
+  border-top:5px solid;
 }
 
   /* these next two are for when phones/ipads are rotated - not sure how to make it mobile first?... */
