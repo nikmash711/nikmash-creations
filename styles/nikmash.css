@@ -88,16 +88,20 @@ section{
 }
   
 .brand2{
-    display: none;
+    opacity: 0;
+    height:0;
+    width:0;
 }
 
 .collapse{
   clear:both;
-  display: none;
+  opacity: 0;
+  height:0;
 }
 
 .mobile{
-  display:none;
+  opacity:0;
+  height: 0;
 }
 
 .dropdown-divider{
@@ -121,6 +125,7 @@ border-top: 1px solid #FFA986;
   float:right;
   margin-top:20px;
   margin-right:20px;
+  opacity:1;
 }
 
 .fa-bars{
@@ -264,9 +269,11 @@ border:none;
   100% {background-color: #e74c3c; }
 }
 
-@media(min-width:800px){
+@media(min-width:900px){
   .brand1{
-    display:none;
+    opacity:0;
+    width: 0;
+    height:0;
   }
 
   .brand2{
@@ -278,6 +285,7 @@ border:none;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 20px;
+    opacity:1;
   }
 
   .nav-link{
@@ -285,7 +293,10 @@ border:none;
   }
 
   .custom-toggler.navbar-toggler{
-    display:none;
+    opacity:0;
+    width:0;
+    height:0;
+    margin:0;
   }
 
   .nav-link::before {
@@ -459,7 +470,7 @@ h1{
   }
 }
 
-@media(min-width: 800px){
+@media(min-width: 900px){
   .text{
     font-size:25px;
   }

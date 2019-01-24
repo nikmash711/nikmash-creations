@@ -25,9 +25,9 @@ function navbarChangeOnScroll(){
     $('.nav-link').css('animation', 'font-color 30s infinite');
     $('.nav-link').css('-webkit-animation', 'font-color 30s infinite');
 
-    $('.mobile .nav-link').css('color', 'white');
-    $('.mobile .nav-link').css('animation', 'none');
-    $('.mobile .nav-link').css('-webkit-animation', 'none');
+    // $('.mobile .nav-link').css('color', 'white');
+    // $('.mobile .nav-link').css('animation', 'none');
+    // $('.mobile .nav-link').css('-webkit-animation', 'none');
       
     $('.navbar-brand').css('color', '#e74c3c');
     $('.navbar-brand').css('animation', 'font-color 30s infinite');
@@ -80,20 +80,39 @@ function navbarChangeOnScroll(){
 }
 
 function checkWindowSize(){
-  if (window.innerWidth < 800){
-    $('.collapse').css('display', 'none');
-    $('.collapse').addClass('mobile');
-    $('.brand1').fadeTo(1000,1);
+  if (window.innerWidth < 900){
+    $('.collapse').css('opacity', '0');
+    $('.collapse').css('display', 'block');
+    $('.collapse').css('height','0');
+    $('.brand1').css('opacity',1);
+    $('.brand2').css('opacity',0);
+    $('.brand2').css('display','block');
+    $('.brand2').css('height','0');
+    $('.brand2').css('width','0');
     $('.nav-link').fadeTo(1000,1);
   }
   else{
-    $('.collapse').removeClass('mobile');
     $('.collapse').css('display', 'flex');
-    $('.brand2').fadeTo(1000,1);
+    $('.collapse').css('opacity', '1');
+    $('.collapse').css('height','auto');
+    $('.brand1').css('opacity',0);
+    $('.brand2').css('opacity',1);
+    $('.brand2').css('height','auto');
+    $('.brand2').css('width','auto');
     $('.nav-link').fadeTo(1000,1);
   }
 }
 
 function toggleNavbar(){
-  $('.mobile').slideToggle('slow');
+  // $('.mobile').slideToggle('slow');
+  if ($('.collapse').css('opacity') === '1'){
+    $('.collapse').css('opacity','0');
+    $('.collapse').css('height','0');
+    $('.collapse').css('display', 'block');
+  }
+  else{
+    $('.collapse').css('opacity','1');
+    $('.collapse').css('height','auto');
+    $('.collapse').css('display', 'block');
+  }
 }
