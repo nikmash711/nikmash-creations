@@ -712,11 +712,11 @@ h1{
 /****FOOTER***/
 
 footer h3{
-  background-color:black;
+  /* background-color:black; */
   padding: 10px;
   margin-bottom:0;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Rock Salt", cursive;
   border-top:5px solid;
 }
