@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 function navbarChangeOnScroll(){
   // change the navbar when you scroll 
-  let stickySidebar = $('.about').offset().top;
+  let stickySidebar = $('.creations').offset().top;
   stickySidebar= stickySidebar-95;
   if ($(window).scrollTop() > stickySidebar) {
     $('.nav-link').css('color', '#e74c3c');
@@ -102,13 +102,28 @@ function checkWindowSize(){
     $('.nav-link').fadeTo(1000,1);
   }
 }
+/**
+ * Set focus to the first focusable child of an element.
+ * @param node a jQuery element
+ */
+function setFocusToFirstChild(elem) {
+  // Query for all focusable children of `elem`
+  //elem.find(FOCUSABLE_SELECTOR)
+  
+  // Get the first of the query result
+  // focus on it
+}
 
 function toggleNavbar(){
-  // $('.mobile').slideToggle('slow');
-  if ($('.collapse').css('opacity') === '1'){
+  const isOpen = $('.collapse').css('opacity') === '1';
+  const collapsible = $('.collapse');
+
+  if (isOpen){
+    // This makes a new object in memory
     $('.collapse').css('opacity','0');
     $('.collapse').css('height','0');
     $('.collapse').css('display', 'block');
+    $('.navbar-toggler').attr('aria-expanded', 'true');
   }
   else{
     $('.collapse').css('opacity','1');
@@ -116,3 +131,4 @@ function toggleNavbar(){
     $('.collapse').css('display', 'block');
   }
 }
+

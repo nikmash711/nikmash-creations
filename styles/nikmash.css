@@ -397,6 +397,7 @@ h1{
 /****ABOUT SECTION*****/
 .about{
   background-color:white;
+  border-top:10px solid black;
 }
 
 .about h2{
@@ -410,6 +411,7 @@ h1{
   margin-left:auto;
   margin-right:auto;
   letter-spacing: -1px;
+  color: black;
 }
 
 .about-text .text{
@@ -502,23 +504,24 @@ h1{
 
 /****CREATIONS****/
 .creations{
-  background-color: black;
+  background-color: white;
+}
+
+.creations h2{
+  color: black;
 }
 
 .creation-box{
-  background-color:rgb(255,255,255);
-  /* background-color:rgba(255,255,255,.7); */
+  background-color:white;
+  border: 5px solid black;
   margin:70px auto 20px auto;
   padding: 30px 20px;
-  /* box-shadow: 10px 10px 20px #000; */
   transition:1s;
   font-family:'Source Code Pro', monospace;
 }
 
 /* .creation-box:hover, .creation-box:focus{
-  box-shadow: 20px 20px 20px #000;
-  background-color:rgb(255,255,255);
-  background-color: rgba(255,255,255,.9);;
+  border:10px solid black;
 } */
 
 .mockup{
@@ -581,18 +584,20 @@ h1{
 
 .view-app{
   display: block;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   border-radius: 50%;
   width: fit-content;
   width:-moz-fit-content;
   margin: auto;
   margin-bottom: 5px;
   padding: 10px;
+  transition: .5s;
 }
 
 .view-app:hover, .view-app:focus{
-  background-color: navy;
+  background-color: black;
+  color: white;
 }
 
 @media(min-width:500px){
@@ -666,12 +671,16 @@ h1{
 
 /*****CONTACT*****/
 .contact{
-  background-color:white;
-  color:black;
+  background-color:black;
+  color:white;
 }
 
 .contact h2{
-  color: black;
+  color: white;
+}
+
+.contact .text{
+  color:white;
 }
 
 .contact_logos{
@@ -686,9 +695,9 @@ h1{
 }
 
 .contact_logos a i{
-  color:black;
+  color:white;
   font-size:60px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   width: fit-content;
   width:-moz-fit-content;
@@ -699,8 +708,8 @@ h1{
 
 .contact_logos a i:hover{
   text-decoration: none;
-  background-color: black;
-  color: white;  /* prevents the anchor default */
+  background-color: white;
+  color: black;  /* prevents the anchor default */
 }
 
 @media (min-width:676px){
