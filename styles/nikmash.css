@@ -70,7 +70,7 @@ section{
 .navbar{
   text-align: center;
   background-color: black;
-  border-bottom: 5px solid;
+  border-bottom: 6px solid;
   transition: background-color 1s;
   transition: border-color 1s;
   position: fixed;
