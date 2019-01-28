@@ -55,9 +55,9 @@ section{
   font-style: italic;
 }
 
-@media(min-width:500px){
+@media(min-width:650px){
   section{
-    padding:35px;
+    padding:35px 100px;
   }
 
   .text{
@@ -364,10 +364,6 @@ h1{
 }
 
 @media(min-width:500px){
-  section{
-    padding:35px;
-  }
-
   .text{
     width: 95%;
   }
@@ -487,7 +483,7 @@ h1{
 }
 
 @media(min-width:1300px){
-  .about-text{
+  /* .about-text{
     display:flex;
     flex-direction: row;
   }
@@ -495,7 +491,7 @@ h1{
   .about-text .text{
     flex:1;
     margin: 0 50px;
-  }
+  } */
 
   .text{
     font-size:28px;
