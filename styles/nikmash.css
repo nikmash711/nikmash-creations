@@ -2,7 +2,10 @@
 * {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
+}
 
+p{
+  line-height: 1.4;
 }
 
 html, body {
@@ -460,6 +463,15 @@ h1{
   color: white;
   background-color: black;
   font-weight: bold;
+}
+
+.svg-icon{
+  vertical-align: sub;
+}
+
+.redux-icon{
+  width: 25px;
+  vertical-align: sub;
 }
 
 @media(min-width:500px){
