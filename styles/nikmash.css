@@ -431,8 +431,7 @@ h1{
 .skill-box{
   color:black;
   padding:10px 50px;
-  width: fit-content;
-  width:-moz-fit-content;
+  width: 280px;
   margin:0 auto;
   border-radius: 10px;
   font-size: 20px;
@@ -463,6 +462,7 @@ h1{
   color: white;
   background-color: black;
   font-weight: bold;
+  margin: auto;
 }
 
 .svg-icon{
@@ -486,7 +486,7 @@ h1{
   }
 }
 
-@media(min-width:950px){
+@media(min-width:1200px){
   .my-skills{
     display:flex;
     flex-direction: row;
@@ -495,15 +495,6 @@ h1{
 }
 
 @media(min-width:1300px){
-  /* .about-text{
-    display:flex;
-    flex-direction: row;
-  }
-
-  .about-text .text{
-    flex:1;
-    margin: 0 50px;
-  } */
 
   .text{
     font-size:28px;
