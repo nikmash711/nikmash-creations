@@ -24,6 +24,10 @@ button{
   cursor: pointer;
 }
 
+button, a{
+  outline: 0;
+}
+
 h1, h2, h3, h4, h5, h6{
   margin-top: 0;
   margin-bottom:0;
@@ -124,11 +128,16 @@ border-top: 1px solid #FFA986;
 .custom-toggler.navbar-toggler {
   font-size:1.5rem;
   background-color: transparent;
-  border-color: black;
+  border: 1px solid transparent;
+  /* border-color: black; */
   float:right;
   margin-top:20px;
   margin-right:20px;
   opacity:1;
+}
+
+.custom-toggler.navbar-toggler:hover{
+  border: 1px solid black ;
 }
 
 .fa-bars{
@@ -519,10 +528,6 @@ h1{
   font-family:'Source Code Pro', monospace;
 }
 
-/* .creation-box:hover, .creation-box:focus{
-  border:10px solid black;
-} */
-
 .mockup{
   width:fit-content;
   width:-moz-fit-content;
@@ -594,7 +599,8 @@ h1{
   transition: .5s;
 }
 
-.view-app:hover, .view-app:focus{
+.link-to-view:hover .view-app,
+.link-to-view:focus .view-app{
   background-color: black;
   color: white;
 }
@@ -705,7 +711,9 @@ h1{
   /* prevents the anchor default */
 }
 
-.contact_logos a i:hover{
+.contact_logos a:hover i,
+.contact_logos a:focus i
+{
   text-decoration: none;
   background-color: white;
   color: black;  /* prevents the anchor default */
