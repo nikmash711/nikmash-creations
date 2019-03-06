@@ -1,4 +1,4 @@
-/*GENERAL*/
+/*GENERAL RULES*/
 * {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
@@ -9,15 +9,15 @@ p{
 }
 
 html, body {
+  background-color:black;
   height: 100%;
   margin: 0;
-  background-color:black;
   scroll-behavior: smooth;
 } 
 
 a{
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: none;
 }
 
 button{
@@ -71,19 +71,24 @@ section{
     width: 95%;
   }
 }
-/* test */
 
 /***** NAVBAR ******/
 .navbar{
-  text-align: center;
   background-color: black;
   border-bottom: 6px solid;
+  min-height: 77px;
+  position: fixed;
+  text-align: center;
   transition: background-color 1s;
   transition: border-color 1s;
-  position: fixed;
-  width:100%;
+  width: 100%;
   z-index: 1000;
-  min-height: 77px;
+}
+
+.navbar-brand{
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
+  padding-left: 20px;
 }
 
 .brand1, .brand2{
@@ -91,7 +96,7 @@ section{
 }
 
 .brand1{
-    float:left;
+  float:left;
 }
   
 .brand2{
@@ -119,13 +124,7 @@ border-top: 1px solid #FFA986;
   background-color: transparent;
 }
 
-.navbar-brand{
-  font-family: 'Rock Salt', cursive;
-  font-size:2rem;
-  padding-left:20px;
-}
-
-.custom-toggler.navbar-toggler {
+.navbar-toggler {
   font-size:1.5rem;
   background-color: transparent;
   border: 1px solid transparent;
@@ -136,7 +135,7 @@ border-top: 1px solid #FFA986;
   opacity:1;
 }
 
-.custom-toggler.navbar-toggler:hover{
+.navbar-toggler:hover{
   border: 1px solid black ;
 }
 
@@ -157,9 +156,9 @@ border:none;
   height:100%;
 }
 
-.navbar a{
+/* .navbar a{
   color: black;
-}
+} */
 
 .nav-link{
   font-family: "Rock Salt", cursive;
@@ -227,60 +226,6 @@ border:none;
   transform: translateX(0);
 }
 
-@-webkit-keyframes font-color {
-  0% { color: #e74c3c; }
-  20% {color: #f1c40f; }
-  40% {color: #1abc9c; }
-  60% {color: #3498db; }
-  80% {color: #9b59b6; }
-  100% {color: #e74c3c; }
-}
-
-@keyframes font-color {
-  0% {color: #e74c3c; }
-  20% {color: #f1c40f; }
-  40% {color: #1abc9c; }
-  60% {color: #3498db; }
-  80% {color: #9b59b6; }
-  100% {color: #e74c3c; }
-}
-
-@-webkit-keyframes border-color {
-  0% {border-color: #e74c3c; }
-  20% {border-color: #f1c40f; }
-  40% {border-color: #1abc9c; }
-  60% {border-color: #3498db; }
-  80% {border-color: #9b59b6; }
-  100% {border-color: #e74c3c; }
-}
-
-@keyframes border-color {
-  0% {border-color: #e74c3c; }
-  20% {border-color: #f1c40f; }
-  40% {border-color: #1abc9c; }
-  60% {border-color: #3498db; }
-  80% {border-color: #9b59b6; }
-  100% {border-color: #e74c3c; }
-}
-
-@-webkit-keyframes bg-color {
-  0% {background-color: #e74c3c; }
-  20% {background-color: #f1c40f; }
-  40% {background-color: #1abc9c; }
-  60% {background-color: #3498db; }
-  80% {background-color: #9b59b6; }
-  100% {background-color: #e74c3c; }
-}
-
-@keyframes bg-color {
-  0% {background-color: #e74c3c; }
-  20% {background-color: #f1c40f; }
-  40% {background-color: #1abc9c; }
-  60% {background-color: #3498db; }
-  80% {background-color: #9b59b6; }
-  100% {background-color: #e74c3c; }
-}
-
 @media(min-width:900px){
   .brand1{
     opacity:0;
@@ -304,7 +249,7 @@ border:none;
     margin: auto 20px;
   }
 
-  .custom-toggler.navbar-toggler{
+  .navbar-toggler{
     opacity:0;
     width:0;
     height:0;
@@ -331,8 +276,6 @@ border:none;
 
 /***TOP PART****/
 .welcome_section{
-  background-color: black;
-  color:#e74c3c;
   text-align: center;
   min-height: 100%;
   padding-bottom: 10px;
@@ -737,7 +680,7 @@ footer h3{
   border-top:5px solid;
 }
 
-  /* these next two are for when phones/ipads are rotated - not sure how to make it mobile first?... */
+  /* these next two are for when phones/ipads are rotated */
   @media (max-width:850px) and (max-height: 580px){
     h1{
       font-size:60px;
@@ -755,3 +698,91 @@ footer h3{
       font-size:50px;
     }
   }
+
+/*Classes For CSS Manipulation*/
+
+@-webkit-keyframes font-color {
+  0% { color: #e74c3c; }
+  20% {color: #f1c40f; }
+  40% {color: #1abc9c; }
+  60% {color: #3498db; }
+  80% {color: #9b59b6; }
+  100% {color: #e74c3c; }
+}
+
+@keyframes font-color {
+  0% {color: #e74c3c; }
+  20% {color: #f1c40f; }
+  40% {color: #1abc9c; }
+  60% {color: #3498db; }
+  80% {color: #9b59b6; }
+  100% {color: #e74c3c; }
+}
+
+@-webkit-keyframes border-color {
+  0% {border-color: #e74c3c; }
+  20% {border-color: #f1c40f; }
+  40% {border-color: #1abc9c; }
+  60% {border-color: #3498db; }
+  80% {border-color: #9b59b6; }
+  100% {border-color: #e74c3c; }
+}
+
+@keyframes border-color {
+  0% {border-color: #e74c3c; }
+  20% {border-color: #f1c40f; }
+  40% {border-color: #1abc9c; }
+  60% {border-color: #3498db; }
+  80% {border-color: #9b59b6; }
+  100% {border-color: #e74c3c; }
+}
+
+@-webkit-keyframes bg-color {
+  0% {background-color: #e74c3c; }
+  20% {background-color: #f1c40f; }
+  40% {background-color: #1abc9c; }
+  60% {background-color: #3498db; }
+  80% {background-color: #9b59b6; }
+  100% {background-color: #e74c3c; }
+}
+
+@keyframes bg-color {
+  0% {background-color: #e74c3c; }
+  20% {background-color: #f1c40f; }
+  40% {background-color: #1abc9c; }
+  60% {background-color: #3498db; }
+  80% {background-color: #9b59b6; }
+  100% {background-color: #e74c3c; }
+}
+
+.black-magic{
+  background: black;
+  color: #e74c3c;
+  animation: font-color 30s infinite;
+  -webkit-animation: font-color 30s infinite;
+}
+
+.rainbow{
+  background: #e74c3c;
+  color: black;
+  animation: bg-color 30s infinite;
+  -webkit-animation: bg-color 30s infinite;
+}
+
+.justBackground{
+  background: #e74c3c;
+  animation: bg-color 30s infinite;
+  -webkit-animation: bg-color 30s infinite;
+}
+
+.justBorder{
+  border: #e74c3c;
+  animation: border-color 30s infinite;
+  -webkit-animation: border-color 30s infinite; 
+}
+
+.justFont{
+  color: #e74c3c;
+  animation: font-color 30s infinite;
+  -webkit-animation: font-color 30s infinite; 
+}
