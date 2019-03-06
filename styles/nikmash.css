@@ -135,7 +135,7 @@ border-top: 1px solid #FFA986;
   opacity:1;
 }
 
-.navbar-toggler:hover{
+.navbar-toggler:hover, .navbar-toggler:focus{
   border: 1px solid black ;
 }
 
@@ -700,7 +700,6 @@ footer h3{
   }
 
 /*Classes For CSS Manipulation*/
-
 @-webkit-keyframes font-color {
   0% { color: #e74c3c; }
   20% {color: #f1c40f; }
@@ -769,19 +768,19 @@ footer h3{
   -webkit-animation: bg-color 30s infinite;
 }
 
-.justBackground{
+.just-background{
   background: #e74c3c;
   animation: bg-color 30s infinite;
   -webkit-animation: bg-color 30s infinite;
 }
 
-.justBorder{
+.just-border{
   border: #e74c3c;
   animation: border-color 30s infinite;
   -webkit-animation: border-color 30s infinite; 
 }
 
-.justFont{
+.just-font{
   color: #e74c3c;
   animation: font-color 30s infinite;
   -webkit-animation: font-color 30s infinite; 

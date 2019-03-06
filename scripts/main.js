@@ -72,9 +72,9 @@ function navbarChangeOnScroll(){
     $(navbar).removeClass('rainbow');
     $(hamburgerBars).addClass('black-magic');
     $(hamburgerBars).removeClass('rainbow');
-    $(navToggler).addClass('justBorder');
-    $(welcomeSection).removeClass('justFont');    
-    $(footer).addClass('justBackground');
+    $(navToggler).addClass('just-border');
+    $(welcomeSection).removeClass('just-font');    
+    $(footer).addClass('just-background');
   }
   else {
     $(navLink).removeClass('black-magic');
@@ -85,9 +85,9 @@ function navbarChangeOnScroll(){
     $(navbar).addClass('rainbow');
     $(hamburgerBars).removeClass('black-magic');
     $(hamburgerBars).addClass('rainbow');
-    $(navToggler).removeClass('justBorder');
-    $(welcomeSection).addClass('justFont');
-    $(footer).removeClass('justBackground');
+    $(navToggler).removeClass('just-border');
+    $(welcomeSection).addClass('just-font');
+    $(footer).removeClass('just-background');
   }  
 }
 
@@ -96,6 +96,7 @@ function checkWindowSize(){
     $(collapsible).css('opacity', '0');
     $(collapsible).css('display', 'block');
     $(collapsible).css('height','0');
+    $(navLink).attr('tabindex', -1);
     $(brand1).css('opacity',1);
     $(brand2).css('opacity',0);
     $(brand2).css('display','block');
@@ -107,6 +108,7 @@ function checkWindowSize(){
     $(collapsible).css('display', 'flex');
     $(collapsible).css('opacity', '1');
     $(collapsible).css('height','auto');
+    $(navLink).attr('tabindex', 0);
     $(brand1).css('opacity',0);
     $(brand2).css('opacity',1);
     $(brand2).css('height','auto');
@@ -119,23 +121,14 @@ const closeNavbar = (collapsible) => {
   $(collapsible).css('opacity','0');
   $(collapsible).css('height','0');
   $(collapsible).css('display', 'block');
-  $(navToggler).attr('aria-expanded', 'true');
+  $(navLink).attr('tabindex', -1);
+  $(navToggler).attr('aria-expanded', 'false');
 };
 
 const openNavbar = (collapsible) => {
   $(collapsible).css('opacity','1');
   $(collapsible).css('height','auto');
   $(collapsible).css('display', 'block');
+  $(navLink).attr('tabindex', 0);
+  $(navToggler).attr('aria-expanded', 'true');
 };
-
-/**
- * Set focus to the first focusable child of an element.
- * @param node a jQuery element
- */
-function setFocusToFirstChild(elem) {
-  // Query for all focusable children of `elem`
-  //elem.find(FOCUSABLE_SELECTOR)
-  
-  // Get the first of the query result
-  // focus on it
-}
