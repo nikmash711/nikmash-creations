@@ -6,7 +6,7 @@ const navLink = $('.nav-link');
 const navBrand = $('.navbar-brand');
 const navbar = $('.navbar');
 const navToggler = $('.navbar-toggler');
-const welcomeSection = $('.welcome_section');
+const welcomeSection = $('.welcome-section');
 const hamburgerBars = $('.fa-bars');
 const footer = $('footer');
 const brand1 = $('.brand1');
@@ -34,7 +34,7 @@ $('.nav-link').click(()=>{
   }
 });
 
-$('#top_of_page').click((e)=>{
+$('#top-of-page').click((e)=>{
   let target = $(e.target);
   //if the click is outside the navbar, and the navbar is on mobile and open, close it
   if(!target.closest('.navbar').length && mobileView()) {
@@ -97,23 +97,30 @@ function checkWindowSize(){
     $(collapsible).css('display', 'block');
     $(collapsible).css('height','0');
     $(navLink).attr('tabindex', -1);
+    $(brand2).attr('tabindex', -1);
     $(brand1).css('opacity',1);
     $(brand2).css('opacity',0);
     $(brand2).css('display','block');
     $(brand2).css('height','0');
     $(brand2).css('width','0');
     $(navLink).fadeTo(1000,1);
+    $(navToggler).removeClass('toggle-border');
+    $(navToggler).attr('tabindex', 0);
   }
   else{
     $(collapsible).css('display', 'flex');
     $(collapsible).css('opacity', '1');
     $(collapsible).css('height','auto');
     $(navLink).attr('tabindex', 0);
+    $(brand2).attr('tabindex', 0);
     $(brand1).css('opacity',0);
+    $(brand1).attr('tabindex', -1);
     $(brand2).css('opacity',1);
     $(brand2).css('height','auto');
     $(brand2).css('width','auto');
     $(navLink).fadeTo(1000,1);
+    $(navToggler).addClass('toggle-border');
+    $(navToggler).attr('tabindex', -1);
   }
 }
 

@@ -127,8 +127,7 @@ border-top: 1px solid #FFA986;
 .navbar-toggler {
   font-size:1.5rem;
   background-color: transparent;
-  border: 1px solid transparent;
-  /* border-color: black; */
+  border: 2px solid transparent;
   float:right;
   margin-top:20px;
   margin-right:20px;
@@ -136,7 +135,7 @@ border-top: 1px solid #FFA986;
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus{
-  border: 1px solid black ;
+  border: 2px solid black ;
 }
 
 .fa-bars{
@@ -275,7 +274,7 @@ border:none;
 }
 
 /***TOP PART****/
-.welcome_section{
+.welcome-section{
   text-align: center;
   min-height: 100%;
   padding-bottom: 10px;
@@ -290,12 +289,12 @@ border:none;
   width:-moz-fit-content;
 }
 
-.welcome_section a{
+.welcome-section a{
   color:inherit;
   /* prevents the anchor default */
 }
 
-.welcome_section a:hover{
+.welcome-section a:hover{
   text-decoration: none;
   /* prevents the anchor default */
 }
@@ -305,12 +304,18 @@ h1{
   font-size: 40px;
 }
 
-.arrow_down{
-  font-size: 70px;
+.arrow-down{
+  width: fit-content;
+  margin: auto;
+  font-size: 50px;
   margin-top:10px;
   display: block;
+  transition: font-size 1s;
 }
 
+.arrow-down:focus, .arrow-down:hover{
+  font-size: 70px;
+}
 
 @media(min-width:450px){
   h1{
@@ -631,18 +636,18 @@ h1{
   color:white;
 }
 
-.contact_logos{
+.contact-logos{
   margin-left:auto;
   margin-right:auto;
   text-align:center;
   display: block;
 }
 
-.contact_logos a{
+.contact-logos a{
   margin: auto 10px;
 }
 
-.contact_logos a i{
+.contact-logos a i{
   color:white;
   font-size:60px;
   background-color: black;
@@ -654,8 +659,8 @@ h1{
   /* prevents the anchor default */
 }
 
-.contact_logos a:hover i,
-.contact_logos a:focus i
+.contact-logos a:hover i,
+.contact-logos a:focus i
 {
   text-decoration: none;
   background-color: white;
@@ -663,7 +668,7 @@ h1{
 }
 
 @media (min-width:676px){
-  .contact_logos a{
+  .contact-logos a{
     font-size: 75px;
   }
 }
@@ -775,13 +780,25 @@ footer h3{
 }
 
 .just-border{
-  border: #e74c3c;
+  border: 0px solid #e74c3c;
+  margin-top: 22px;
+  margin-right: 22px;
   animation: border-color 30s infinite;
-  -webkit-animation: border-color 30s infinite; 
+  -webkit-animation: border-color 30s infinite;
+}
+
+.just-border:hover, .just-border:focus{
+  border: 2px solid #e74c3c;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 .just-font{
   color: #e74c3c;
   animation: font-color 30s infinite;
   -webkit-animation: font-color 30s infinite; 
+}
+
+.toggle-border{
+  margin: 0;
 }
