@@ -1,0 +1,4 @@
+# [NikMash Creations](https://nikmash.com/)
+I’m a full-stack developer highly skilled in the MERN stack, and a React enthusiast who loves channeling my creative energy towards the front-end. I graduated Summa Cum Laude from UCLA with a degree in Cognitive Science and a Specialization in Computer Science. Having been educated in both psychology and programming, I enjoy integrating what I’ve learned about human behavior into developing intuitive products with optimal UI/UX design.
+
+I approach every challenge with a positive and determined attitude — including my late-night debugging sessions — and I don't give up until every detail looks and functions the way it's supposed to. I strive to learn from those around me and always encourage feedback on my work.
