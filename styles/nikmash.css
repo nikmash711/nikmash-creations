@@ -283,7 +283,7 @@ button:focus{
   transform: translateX(0);
 }
 
-@media(min-width:900px){
+@media(min-width:950px){
   .brand1{
     opacity:0;
     height:0;
@@ -666,7 +666,7 @@ button:focus{
   }
 }
 
-@media(min-width: 900px){
+@media(min-width: 950px){
   .text{
     font-size:1.3rem;
   }
@@ -745,7 +745,7 @@ button:focus{
   }
 }
 
-@media (min-width: 900px){
+@media (min-width: 950px){
   .contact-logos a i{
     font-size: 4.5rem;
   }

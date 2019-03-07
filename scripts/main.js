@@ -14,7 +14,7 @@ const brand2 = $('.brand2');
 
 /*HELPER FNS*/
 const mobileView = () => {
-  return window.innerWidth < 900 ? true : false;
+  return window.innerWidth < 950 ? true : false;
 };
 
 /* EVENT LISTENERS */
@@ -131,7 +131,6 @@ const closeNavbar = (collapsible) => {
   $(collapsible).css('visibility','hidden');
   $(collapsible).css('height','0');
   $(collapsible).css('display', 'block');
-  $(collapsible).css('padding-bottom', '0px');
   $(navLink).attr('tabindex', -1);
   $(navToggler).attr('aria-expanded', 'false');
 };
@@ -141,7 +140,6 @@ const openNavbar = (collapsible) => {
   $(collapsible).css('opacity','1');
   $(collapsible).css('height','auto');
   $(collapsible).css('display', 'block');
-  $(collapsible).css('padding-bottom', '10px');
   $(navLink).attr('tabindex', 0);
   $(navToggler).attr('aria-expanded', 'true');
 };
