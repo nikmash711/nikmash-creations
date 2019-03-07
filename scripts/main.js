@@ -96,6 +96,7 @@ function checkWindowSize(){
     $(collapsible).css('opacity', '0');
     $(collapsible).css('display', 'block');
     $(collapsible).css('height','0');
+    $(collapsible).css('visibility','hidden');
     $(navLink).attr('tabindex', -1);
     $(brand2).attr('tabindex', -1);
     $(brand1).css('opacity',1);
@@ -111,6 +112,7 @@ function checkWindowSize(){
     $(collapsible).css('display', 'flex');
     $(collapsible).css('opacity', '1');
     $(collapsible).css('height','auto');
+    $(collapsible).css('visibility','visible');
     $(navLink).attr('tabindex', 0);
     $(brand2).attr('tabindex', 0);
     $(brand1).css('opacity',0);
