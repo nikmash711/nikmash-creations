@@ -88,7 +88,7 @@ button:focus{
 
 @media(min-width:650px){
   section{
-    padding:35px 100px;
+    padding:20px 50px;
   }
 
   h1{
@@ -101,6 +101,10 @@ button:focus{
 }
 
 @media(min-width:992px){
+  section{
+    padding:20px 100px;
+  }
+
   h1{
       font-size:6rem;
   }
@@ -371,6 +375,191 @@ button:focus{
   }
 }
 
+/****CREATIONS****/
+.creations{
+  background-color: white;
+}
+
+.creations h2{
+  color: black;
+}
+
+.creation-box{
+  border: 5px solid black;
+  border-radius: 20px;
+  font-family:'Source Code Pro', monospace;
+  margin:70px auto 20px auto;
+  padding: 30px 20px;
+  transition:1s;
+}
+
+.creation-box header{
+  text-align: center;
+}
+
+.app-title{
+  color: black;
+  font-weight: 700;
+  font-size: 1.7rem;
+  position: relative;
+  text-align: center;
+}
+
+.fa-arrow-up{
+  display: none;
+  position: absolute;
+  transition: .5s;
+  -ms-transform: rotate(40deg); 
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.app-title:focus .fa-arrow-up,
+.app-title:hover .fa-arrow-up{
+  display: inline-block;
+}
+
+.mockup{  
+  display: block;
+  margin: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.mockup img{
+  width: 260px;
+}
+
+.creation-box .tech-stack{
+  margin: 30px auto 10px auto;
+}
+
+.tech-stack-lists{
+  margin: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.tech-stack-section{
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: auto;
+}
+
+.creation-box .skill-list{
+  margin:auto 10px;
+  display: inline-block;
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.app-description{
+  font-weight: 700;
+  padding: 10px 10px;
+  font-size: 1rem;
+}
+
+.viewing-options{
+  display:flex;
+  margin-top:5px;
+  justify-content: center;
+}
+
+.viewing-options a{
+  color: black;
+  text-align: center;
+  margin: auto 10px;
+}
+
+.view-app{
+  display: block;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  width: fit-content;
+  width:-moz-fit-content;
+  margin: auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  transition: .5s;
+  font-size: 2rem;
+}
+
+.link-to-view:hover .view-app,
+.link-to-view:focus .view-app{
+  background-color: black;
+  color: white;
+}
+
+@media(min-width:500px){
+  .creation-box{
+    width:95%;
+  }
+
+  .mockup img{
+    width: 400px;
+  }
+
+  .creation-box .app-title{
+    font-size: 2.5em;
+  }
+
+  .view-app{
+    font-size:2em;
+  }
+}
+
+@media(min-width:1200px){
+
+  .creation-box{
+    display:flex;
+  }
+
+  .mockup{
+    flex:2;
+    display:inline-block;
+  } 
+
+  .mockup img{
+    width: 100%;
+  }
+
+  .app-intro {
+    display: inline-block;
+    width: 100%;
+    flex: 2;
+    vertical-align: top;
+  }
+
+  .app-description{
+    padding: 10px;
+  }
+
+  .second{
+    order: 2;
+    text-align: right;
+  }
+
+  .first{
+    order: 1;
+    text-align: left;
+  }
+
+  .tech-stack-section{
+    flex: 1;
+  }
+
+  .creation-box .tech-stack{
+    margin-top: 0;
+  }
+}
+
+@media(min-width:1350px){
+  .app-description{
+    font-size: 1.4em;
+  }
+}
+
 /****ABOUT SECTION*****/
 .about{
   background-color:white;
@@ -476,170 +665,6 @@ button:focus{
 
   .text{
     font-size:28px;
-  }
-}
-
-/****CREATIONS****/
-.creations{
-  background-color: white;
-}
-
-.creations h2{
-  color: black;
-}
-
-.creation-box{
-  background-color:white;
-  border: 5px solid black;
-  margin:70px auto 20px auto;
-  padding: 30px 20px;
-  transition:1s;
-  font-family:'Source Code Pro', monospace;
-}
-
-.mockup{
-  width:fit-content;
-  width:-moz-fit-content;
-  margin:auto;
-  display: block;
-}
-
-.mockup img{
-  width: 260px;
-}
-
-.creation-box .title{
-  font-size: 30px;
-  text-align: center;
-  font-weight: 700;
-}
-
-.creation-box .tech-stack{
-  margin:30px auto 10px auto;
-}
-
-.tech-stack-lists{
-  margin:auto;
-  width: fit-content;
-  width:-moz-fit-content;
-}
-
-.tech-stack-section{
-  width: fit-content;
-  width:-moz-fit-content;
-  margin: auto;
-}
-
-.creation-box .skill-list{
-  margin:auto 10px;
-  display: inline-block;
-  width: fit-content;
-  width:-moz-fit-content;
-}
-
-.app-description{
-  letter-spacing: -.5px;
-  font-weight: 700;
-  padding: 10px 10px;
-}
-
-.viewing-options{
-  display:flex;
-  margin-top:5px;
-  justify-content: center;
-}
-
-.viewing-options a{
-  color: black;
-  text-align: center;
-  margin: auto 10px;
-}
-
-.view-app{
-  display: block;
-  background-color: white;
-  color: black;
-  border-radius: 50%;
-  width: fit-content;
-  width:-moz-fit-content;
-  margin: auto;
-  margin-bottom: 5px;
-  padding: 10px;
-  transition: .5s;
-}
-
-.link-to-view:hover .view-app,
-.link-to-view:focus .view-app{
-  background-color: black;
-  color: white;
-}
-
-@media(min-width:500px){
-  .creation-box{
-    width:95%;
-  }
-
-  .mockup img{
-    width: 400px;
-  }
-
-  .creation-box .title{
-    font-size: 2.5em;
-  }
-
-  .view-app{
-    font-size:2em;
-  }
-}
-
-@media(min-width:1200px){
-
-  .creation-box{
-    display:flex;
-  }
-
-  .mockup{
-    flex:2;
-    display:inline-block;
-  } 
-
-  .mockup img{
-    width: 100%;
-  }
-
-  .app-intro {
-    display: inline-block;
-    width: 100%;
-    flex: 2;
-    vertical-align: top;
-  }
-
-  .app-description{
-    padding: 10px;
-  }
-
-  .second{
-    order: 2;
-    text-align: right;
-  }
-
-  .first{
-    order: 1;
-    text-align: left;
-  }
-
-  .tech-stack-section{
-    flex: 1;
-  }
-
-  .creation-box .tech-stack{
-    margin-top: 0;
-  }
-}
-
-@media(min-width:1350px){
-  .app-description{
-    font-size: 1.4em;
   }
 }
 

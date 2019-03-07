@@ -126,6 +126,7 @@ function checkWindowSize(){
 
 const closeNavbar = (collapsible) => {
   $(collapsible).css('opacity','0');
+  $(collapsible).css('visibility','hidden');
   $(collapsible).css('height','0');
   $(collapsible).css('display', 'block');
   $(collapsible).css('padding-bottom', '0px');
@@ -134,6 +135,7 @@ const closeNavbar = (collapsible) => {
 };
 
 const openNavbar = (collapsible) => {
+  $(collapsible).css('visibility','visible');
   $(collapsible).css('opacity','1');
   $(collapsible).css('height','auto');
   $(collapsible).css('display', 'block');
