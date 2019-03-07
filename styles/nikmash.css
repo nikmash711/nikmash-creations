@@ -443,6 +443,7 @@ button:focus{
 
 .creation-box .tech-stack{
   margin: 30px auto 10px auto;
+  font-size: 1.1rem;
 }
 
 .tech-stack-lists{
@@ -528,6 +529,10 @@ button:focus{
   .view-app{
     font-size: 2rem;
   }
+
+  .creation-box .tech-stack{
+    font-size: 1.2rem;
+  }
 }
 
 @media(min-width:1200px){
@@ -576,7 +581,7 @@ button:focus{
 
 @media(min-width:1350px){
   .app-description{
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 }
 
