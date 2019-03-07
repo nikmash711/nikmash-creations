@@ -596,6 +596,7 @@ button:focus{
   margin-left:auto;
   margin-right:auto;
   text-align: center;
+  padding: 0px 10px;
 }
 
 .about-text .text{
@@ -603,10 +604,10 @@ button:focus{
 }
 
 .headshot{
-  margin: 20px auto;
-  display: block;
-  width: 200px;
   border-radius:50%;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
 }
 
 .my-skills{
@@ -614,13 +615,13 @@ button:focus{
 }
 
 .skill-box{
-  color:black;
-  padding:10px 50px;
-  width: 280px;
-  margin:0 auto;
   border-radius: 10px;
+  color:black;
   font-size: 20px;
   font-family: 'Source Code Pro', monospace;
+  margin:0 auto;
+  padding:10px 50px;
+  width: 280px;
 }
 
 .other-skills{
@@ -630,13 +631,13 @@ button:focus{
 
 .tech-stack{
   border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding:5px 10px;
+  margin: auto;
   width: fit-content;
   width:-moz-fit-content;
-  padding:5px 10px;
-  color: white;
-  background-color: black;
-  font-weight: bold;
-  margin: auto;
 }
 
 .svg-icon{
@@ -651,6 +652,10 @@ button:focus{
 @media(min-width:500px){
   .my-skills{
     width: 95%;
+  }
+
+  .text{
+    padding: 0px 20px;
   }
 }
 
