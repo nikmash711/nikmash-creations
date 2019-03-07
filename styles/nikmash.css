@@ -140,6 +140,7 @@ button:focus{
 /***** NAVBAR ******/
 .navbar{
   background-color: black;
+  border-bottom: 4px solid;
   min-height: 77px;
   position: fixed;
   text-align: center;
@@ -837,8 +838,8 @@ footer h3{
 .black-magic{
   background: black;
   color: #e74c3c;
-  animation: font-color 30s infinite;
-  -webkit-animation: font-color 30s infinite;
+  animation: font-color 30s infinite, border-color 30s infinite;
+  -webkit-animation: font-color 30s infinite, border-color 30s infinite;
 }
 
 .rainbow{
