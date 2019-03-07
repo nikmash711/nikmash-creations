@@ -42,11 +42,12 @@ h1{
 
 h2{
   border-bottom: 4px solid;
+  border-top: 4px solid;
   border-radius: 10px;
   font-family: 'Rock Salt', cursive;
   font-size:2.5rem;
   margin:auto;
-  padding: 0 20px 10px 20px;
+  padding: 15px 20px;
   text-align: center;
   width:fit-content;
   width:-moz-fit-content;
@@ -480,6 +481,8 @@ button:focus{
 .app-description{
   font-size: 1rem;
   font-weight: 700;
+  margin: auto;
+  max-width: 700px;
   padding: 10px 10px;
 }
 
@@ -547,7 +550,7 @@ button:focus{
   }
 }
 
-@media(min-width:1200px){
+@media(min-width:1250px){
   .creation-box{
     display: flex;
   }
@@ -600,7 +603,7 @@ button:focus{
 /****ABOUT SECTION*****/
 .about{
   background-color:white;
-  border-top:10px solid black;
+  /* border-top:10px solid black; */
 }
 
 .about h2{
@@ -684,7 +687,7 @@ button:focus{
   }
 }
 
-@media(min-width:1200px){
+@media(min-width:1250px){
   .my-skills{
     display:flex;
     flex-direction: row;
