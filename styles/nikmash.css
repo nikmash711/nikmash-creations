@@ -18,6 +18,7 @@ html, body {
 a{
   cursor: pointer;
   text-decoration: none;
+  color: black;
 }
 
 button{
@@ -88,10 +89,6 @@ button:focus{
 }
 
 @media(min-width:500px){
-  .text{
-    width: 95%;
-  }
-
   h2{
     font-size:4rem;
   }
@@ -104,10 +101,6 @@ button:focus{
 
   h1{
     font-size:5rem;
-  }
-
-  .text{
-    width: 95%;
   }
 }
 
@@ -596,13 +589,13 @@ button:focus{
 }
 
 .text{
-  text-align: center;
+  color: black;
   font-family:'Source Code Pro', monospace;
-  font-size:20px;
+  font-size:1.2rem;
+  letter-spacing: -1px;
   margin-left:auto;
   margin-right:auto;
-  letter-spacing: -1px;
-  color: black;
+  text-align: center;
 }
 
 .about-text .text{
@@ -630,13 +623,12 @@ button:focus{
   font-family: 'Source Code Pro', monospace;
 }
 
-.other{
+.other-skills{
   margin-bottom:0;
   margin-top:0;
 }
 
 .tech-stack{
-  /* border-bottom: 2px solid; */
   border-radius: 10px;
   width: fit-content;
   width:-moz-fit-content;
@@ -664,7 +656,7 @@ button:focus{
 
 @media(min-width: 900px){
   .text{
-    font-size:25px;
+    font-size:1.3rem;
   }
 }
 
@@ -677,9 +669,8 @@ button:focus{
 }
 
 @media(min-width:1300px){
-
   .text{
-    font-size:28px;
+    font-size:1.5rem;
   }
 }
 
