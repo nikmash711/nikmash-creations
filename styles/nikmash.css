@@ -29,22 +29,21 @@ button, a{
 }
 
 h1, h2, h3, h4, h5, h6{
+  line-height: 1.5;
   margin-top: 0;
   margin-bottom:0;
-  line-height: 1.5;
 }
 
 h2{
-  font-family: 'Rock Salt', cursive;
-  font-size:40px;
-  color:white;
-  text-align: center;
-  margin:auto;
   border-bottom: 4px solid;
   border-radius: 10px;
+  font-family: 'Rock Salt', cursive;
+  font-size:40px;
+  margin:auto;
+  padding: 0 20px 10px 20px;
+  text-align: center;
   width:fit-content;
   width:-moz-fit-content;
-  padding: 0 20px 10px 20px;
 }
 
 section{
@@ -61,6 +60,10 @@ section{
 .italic{
   font-style: italic;
 }
+
+button:focus{
+  outline:none;
+} 
 
 @media(min-width:650px){
   section{
@@ -85,50 +88,17 @@ section{
   z-index: 1000;
 }
 
-.navbar-brand{
-  font-family: 'Rock Salt', cursive;
-  font-size: 2rem;
-  padding-left: 20px;
-}
-
-.brand1, .brand2{
-  opacity: 0;
-}
-
-.brand1{
-  float:left;
-}
-  
-.brand2{
-    opacity: 0;
-    height:0;
-    width:0;
-}
-
 .collapse{
   clear:both;
-  opacity: 0;
   height:0;
-}
-
-.mobile{
-  opacity:0;
-  height: 0;
-}
-
-.dropdown-divider{
-border-top: 1px solid #FFA986;
-}
-
-.dropdown-item:focus, .dropdown-item:hover{
-  background-color: transparent;
+  opacity: 0;
 }
 
 .navbar-toggler {
-  font-size:1.5rem;
   background-color: transparent;
   border: 2px solid transparent;
   float:right;
+  font-size:1.5rem;
   margin-top:20px;
   margin-right:20px;
   opacity:1;
@@ -142,35 +112,80 @@ border-top: 1px solid #FFA986;
   color: black;
 }
 
-button:focus{
-  outline:none;
+#logo{
+  height:100%;
+  width: 100%;
+}
+
+.navbar-brand{
+  font-family: 'Rock Salt', cursive;
+  font-size: 2rem;
+  padding-left: 20px;
+  transition: transform 0.2s;
+}
+
+.brand1, .brand2{
+  opacity: 0;
+}
+
+.brand1{
+  float:left;
+}
+  
+.brand2{
+  opacity: 0;
+  height:0;
+  width:0;
+}
+
+.navbar-brand:before{
+  content: '{';
+  padding-right: 10px;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.navbar-brand:after{
+  content: '}';
+  opacity: 0;
+  padding-left: 10px;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+.navbar-brand:before,
+.navbar-brand:after{
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+  -moz-transition: opacity 0.2s, -moz-transform 0.2s;
+  -o-transition: opacity 0.2s, -o-transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.navbar-brand:hover::before,
+.navbar-brand:hover::after,
+.navbar-brand:focus::before,
+.navbar-brand:focus::after {
+  opacity: 1;
 } 
 
-.dropdown-menu{
-border:none;
-}
-
-#logo{
-  width: 100%;
-  height:100%;
-}
-
-/* .navbar a{
-  color: black;
-} */
-
 .nav-link{
-  font-family: "Rock Salt", cursive;
-  transition: transform 0.2s;
-  position: relative;
-  padding: 5px 20px;
-  margin:5px auto;
   display: block;
+  font-family: "Rock Salt", cursive;
   font-weight: 700;
   letter-spacing: 4px;
+  margin:5px auto;
+  position: relative;
+  padding: 5px 20px;
+  transition: transform 0.2s;
   width: fit-content;
   width:-moz-fit-content;
-  opacity:0;
 }
 
 .nav-link:hover, .nav-link:focus{
@@ -181,12 +196,12 @@ border:none;
 
 .nav-link::before,
 .nav-link::after {
-  position: absolute;
-  top: 13px;
   font-weight: 100;
   font-size: 150%;
   font-family: sans-serif;
   opacity: 0;
+  position: absolute;
+  top: 13px;
   -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
   -moz-transition: opacity 0.2s, -moz-transform 0.2s;
   -o-transition: opacity 0.2s, -o-transform 0.2s;
@@ -194,8 +209,8 @@ border:none;
 }
 
 .nav-link::before {
-  left: -8px;
   content: '<';
+  left: -8px;
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   -o-transform: translateX(-100%);
@@ -204,8 +219,8 @@ border:none;
 }
 
 .nav-link::after {
-  right: -15px;
   content: '/>';
+  right: -15px;
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -o-transform: translateX(100%);
@@ -228,8 +243,8 @@ border:none;
 @media(min-width:900px){
   .brand1{
     opacity:0;
-    width: 0;
     height:0;
+    width: 0;
   }
 
   .brand2{
@@ -240,8 +255,8 @@ border:none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 20px;
     opacity:1;
+    padding: 0 20px;
   }
 
   .nav-link{
@@ -249,10 +264,10 @@ border:none;
   }
 
   .navbar-toggler{
-    opacity:0;
-    width:0;
     height:0;
     margin:0;
+    opacity:0;
+    width:0;
   }
 
   .nav-link::before {
@@ -267,10 +282,10 @@ border:none;
 @media(min-width:1120px){
   .nav-link::before {
     left: -0.5em;
-    }
+  }
   .nav-link::after {
     right: -0.5em;
-    }
+  }
 }
 
 /***TOP PART****/
