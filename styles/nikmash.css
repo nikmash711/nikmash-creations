@@ -42,10 +42,9 @@ h1{
 
 h2{
   border-bottom: 4px solid;
-  border-top: 4px solid;
   border-radius: 10px;
   font-family: 'Rock Salt', cursive;
-  font-size:2.5rem;
+  font-size:2.1rem;
   margin:auto;
   padding: 15px 20px;
   text-align: center;
@@ -560,7 +559,7 @@ button:focus{
     flex: 2;
     display: inline-block;
   } 
-
+ 
   .mockup img{
     width: 100%;
   }
@@ -605,7 +604,9 @@ button:focus{
 /****ABOUT SECTION*****/
 .about{
   background-color:white;
-  /* border-top:10px solid black; */
+  border-top:8px solid black;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
 }
 
 .about h2{
