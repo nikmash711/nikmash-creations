@@ -128,6 +128,7 @@ const closeNavbar = (collapsible) => {
   $(collapsible).css('opacity','0');
   $(collapsible).css('height','0');
   $(collapsible).css('display', 'block');
+  $(collapsible).css('padding-bottom', '0px');
   $(navLink).attr('tabindex', -1);
   $(navToggler).attr('aria-expanded', 'false');
 };
@@ -136,6 +137,7 @@ const openNavbar = (collapsible) => {
   $(collapsible).css('opacity','1');
   $(collapsible).css('height','auto');
   $(collapsible).css('display', 'block');
+  $(collapsible).css('padding-bottom', '10px');
   $(navLink).attr('tabindex', 0);
   $(navToggler).attr('aria-expanded', 'true');
 };
