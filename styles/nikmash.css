@@ -118,25 +118,6 @@ button:focus{
   }
 }
 
-/* these next two are for when phones/ipads are rotated */
-@media (max-width:850px) and (max-height: 580px){
-  h1{
-    font-size:60px;
-  }
-
-  #welcome-text{
-    top:50%;
-    margin-top:-50px;
-  }
-
-}
-
-@media (max-width:600px) and (max-height: 580px){
-  h1{
-    font-size:50px;
-  }
-}
-
 /***** NAVBAR ******/
 .navbar{
   background-color: black;
