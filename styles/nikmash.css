@@ -459,7 +459,6 @@ button:focus{
 
 .creation-box .tech-stack{
   margin: 30px auto 10px auto;
-  font-size: 1.1rem;
 }
 
 .tech-stack-lists{
@@ -547,10 +546,6 @@ button:focus{
 
   .view-app{
     font-size: 2rem;
-  }
-
-  .creation-box .tech-stack{
-    font-size: 1.2rem;
   }
 }
 
@@ -663,6 +658,7 @@ button:focus{
   background-color: black;
   color: white;
   font-weight: bold;
+  font-size: 1rem;
   padding:5px 10px;
   margin: auto;
   width: fit-content;
@@ -685,6 +681,12 @@ button:focus{
 
   .text{
     padding: 0px 20px;
+  }
+}
+
+@media(min-width: 650px){
+  .tech-stack{
+    font-size: 1.2rem;
   }
 }
 
