@@ -85,7 +85,7 @@ button:focus{
 .skill-list li{
   font-weight: 700;
   line-height: 2;
-  font-size: 1.1rem;
+  font-size: .95rem;
 }
 
 @media(min-width:450px){
@@ -115,6 +115,10 @@ button:focus{
 
   h6{
     font-size: 1.2rem;
+  }
+
+  .skill-list li{
+    font-size: 1.1rem;
   }
 }
 
